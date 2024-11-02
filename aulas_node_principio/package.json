@@ -1,0 +1,11 @@
+{
+  "name": "aula1-node_estrutura_projeto",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Bruno Maciel",
+  "license": "ISC"
+}
