@@ -12,7 +12,7 @@ router.get('/cadastro', function(req, res, next) {
 });
 
 router.post('/cadastro', function(req, res, next) {
-  const { nome, diciplina } = req.body;
+  const { nome, disciplina } = req.body;
   const professor = { nome, disciplina };
   professores.push(professor);
   res.redirect('/users');
