@@ -9,12 +9,13 @@ const FooterContainer = styled.footer`
   position: fixed;
   bottom: 0;
   width: 100%;
+  font-weight: 600;
 `;
 
 const Footer: React.FC = () => {
   return (
     <FooterContainer>
-      <p>Direitos autorais © 2024</p>
+      <p>Direitos autorais © Pós Tech / FIAP 2024</p>
     </FooterContainer>
   );
 };
