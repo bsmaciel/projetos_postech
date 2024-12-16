@@ -1,3 +1,5 @@
+version: '2.29.2'
+
 volumes:
   mysql_data: {}
 
@@ -23,5 +25,6 @@ services:
       WORDPRESS_DB_HOST: mysql:3306
       WORDPRESS_DB_USER: wordpress
       WORDPRESS_DB_PASSWORD: wordpress
+      WORDPRESS_DB_NAME: wordpress
     volumes:
       - ./wordpress:/var/www/html
