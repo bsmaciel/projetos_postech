@@ -5,7 +5,8 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "FiapChat",
+  title: "Fiap Chat",
+  description: "Aula 1, Next.js, disciplina Frontend.",
 };
 
 export default function RootLayout({
