@@ -32,6 +32,8 @@ export default function Home() {
         });
         throw new Error(data.message || 'Algo deu errado na autenticação')
       }
+      document.cookie = 'username=${data.name}; expiere=Thu, 18 Dec 2029 12:00:00 UTC; path=/';
+      document.cookie = 'id=${data.id}; expires-Thu, 18 De 2029 12:00:00 UTC; path-/';
       router.push('/persons')
     } catch(error){}
   }
