@@ -1,8 +1,8 @@
 'use client'
-import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { useState } from 'react';
 import {Bounce, ToastContainer, toast} from "react-toastify";
+import { useRouter } from "next/navigation";
 
 export default function Home() {
   const router = useRouter();
@@ -11,10 +11,10 @@ export default function Home() {
   const handleLogin = async (e:any) => {
     e.preventDefault()
     try{
-      const res = await fetch('/api/login',{
+      const res = await fetch('./api/login',{
         method: 'POST',
         headers: {
-          'Content-Type': 'application/jseon',
+          'Content-Type': 'application/json',
         },
         body: JSON.stringify({ name, password }),
       })
@@ -27,19 +27,20 @@ export default function Home() {
           closeOnClick: true,
           pauseOnHover: true,
           draggable: true,
+          progress: undefined,
           theme: "colored",
           transition: Bounce,
         });
         throw new Error(data.message || 'Algo deu errado na autenticação')
       }
-      document.cookie = 'username=${data.name}; expiere=Thu, 18 Dec 2029 12:00:00 UTC; path=/';
-      document.cookie = 'id=${data.id}; expires-Thu, 18 De 2029 12:00:00 UTC; path-/';
+      // document.cookie = 'username=${data.name}; expiere=Thu, 18 Dec 2029 12:00:00 UTC; path=/';
+      // document.cookie = 'id=${data.id}; expires-Thu, 18 De 2029 12:00:00 UTC; path-/';
       router.push('/persons')
     } catch(error){}
   }
   return (
     <main className="flex flex-1 flex-col h-screen w-screen justify-center items-center bg-background-900">
-      <p className="font-sans text-4xl text-fontColor-900 mb-6">FIAP CHAT</p>
+      <p className="font-sans text-4xl text-fontColor-900 mb-6">FIAP CHAT - LOGIN</p>
       <div className="flex flex-1 flex-col max-h-[45vh] w-[80vw] justify-center items-center bg-background-800 rounded-[10px]">
         <p className="font-sans text-lg text-fontColor-900 bg-background-800">Digite um nome de usuário</p>
         <input className="font-sans text-lg text-fontColor-900 bg-background-900 border border-fontColor-900 rounded-3xl p-2 w-5/6 mt-3" 
@@ -59,7 +60,7 @@ export default function Home() {
           <Link 
             className="w-32 mt-6 p-1 text-center font-sans bg-fontColor-900 rounded-xl hover:opacity-80 text-[#fff]" 
             href="/register">
-            Cadastrar</Link>
+            Cadastre-se</Link>
           <button disabled={(password == '' || name == '')} className="w-32 mt-6 p-1 font-sans bg-fontColor-900 rounded-xl hover:opacity-80 text-[#fff]"
           onClick={handleLogin}>
           Entrar</button>
