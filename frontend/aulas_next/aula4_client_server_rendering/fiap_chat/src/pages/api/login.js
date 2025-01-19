@@ -12,11 +12,11 @@ export default async function handler(req, res){
             const data = await response.json()
             if(response.ok){
                 return res.status(200).json(data)
-            }else{
+            } else {
                 return res.status(response.status).json(data)
             }
         } catch(error){
-            return res.status(500).json({message:'Erro ao conctar com a API de terceiros.'})
+            return res.status(500).json({message:'Erro ao conectar com a API de terceiros.'})
         }
     } else {
         res.setHeader('Allow', ['POST'])
