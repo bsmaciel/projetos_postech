@@ -38,7 +38,7 @@ export default function Register(){
 
     return(
         <main className="flex flex-1 flex-col h-screen w-screen justify-center items-center bg-background-900">
-            <p className="font-sans text-4xl text-fontColor-900 mb-6">FIAP CHAT</p>
+            <p className="font-sans text-4xl text-fontColor-900 mb-6">FIAP CHAT - CADASTRO</p>
             <div className="flex flex-1 flex-col max-h-[45vh] w-[80vw] justify-center items-center bg-background-800 rounded-[10px]">
                 <p className="font-sans text-lg text-fontColor-900 bg-background-900">Digite um nome de usuário</p>
                 <input 
@@ -47,7 +47,7 @@ export default function Register(){
                     placeholder="Seu nome aqui!"
                     onChange={(e) => setName(e.target.value)} 
                     />
-                <p className="mt-6 font-sans text-lg text-fontColor-900 bg-background-900">Digite Sua senha</p>
+                <p className="mt-6 font-sans text-lg text-fontColor-900 bg-background-900">Digite uma senha</p>
                 <input 
                     className="font-sans text-lg text-fontColor-900 bg-background-900 border border-fontColor-900 rounded-3xl p-2 w-5/6 mt-3" 
                     type="password" 
@@ -62,7 +62,7 @@ export default function Register(){
                     <button disabled ={(password == '' || name == '')} 
                         className="w-32 mt-6 p-1 font-sans bg-fontColor-900 rounded-xl hover:opacity-80 text-[#fff]"
                         onClick={handleLogin}
-                        >Cadastrar</button>
+                        >Enviar</button>
                 </div>
             </div>
             <ToastContainer 

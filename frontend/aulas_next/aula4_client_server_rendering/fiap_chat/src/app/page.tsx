@@ -33,8 +33,8 @@ export default function Home() {
         });
         throw new Error(data.message || 'Algo deu errado na autenticação')
       }
-      // document.cookie = 'username=${data.name}; expiere=Thu, 18 Dec 2029 12:00:00 UTC; path=/';
-      // document.cookie = 'id=${data.id}; expires-Thu, 18 De 2029 12:00:00 UTC; path-/';
+      document.cookie = 'username=${data.name}; expiere=Thu, 18 Dec 2029 12:00:00 UTC; path=/';
+      document.cookie = 'id=${data.id}; expires-Thu, 18 De 2029 12:00:00 UTC; path-/';
       router.push('/persons')
     } catch(error){}
   }
@@ -42,7 +42,7 @@ export default function Home() {
     <main className="flex flex-1 flex-col h-screen w-screen justify-center items-center bg-background-900">
       <p className="font-sans text-4xl text-fontColor-900 mb-6">FIAP CHAT - LOGIN</p>
       <div className="flex flex-1 flex-col max-h-[45vh] w-[80vw] justify-center items-center bg-background-800 rounded-[10px]">
-        <p className="font-sans text-lg text-fontColor-900 bg-background-800">Digite um nome de usuário</p>
+        <p className="font-sans text-lg text-fontColor-900 bg-background-800">Digite seu nome de usuário</p>
         <input className="font-sans text-lg text-fontColor-900 bg-background-900 border border-fontColor-900 rounded-3xl p-2 w-5/6 mt-3" 
           type="text" 
           placeholder="Seu nome aqui!" 
