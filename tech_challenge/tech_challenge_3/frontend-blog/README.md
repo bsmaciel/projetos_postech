@@ -49,10 +49,49 @@ export default tseslint.config({
 })
 ```
 
-=============================================
+================
 PROTOTYPING VIEW
-=============================================
+================
 
 Aluno: https://xd.adobe.com/view/8d45143f-dada-4959-9655-a22f25950a15-d816/
 
 Docente: https://xd.adobe.com/view/82960662-6ff0-4e78-9eb8-f38ffc74fdde-d7c5/
+
+==================================
+RELAÇÃO DE FORMULÁRIOS NECESSÁRIOS
+==================================
+
+- login
+- signUp
+- passwordRescue
+- addUser
+- creatPost
+- editPost
+- managePosts
+
+==================================
+RELAÇÃO DE TELAS NECESSÁRIAS
+==================================
+
+- landingPage
+- login
+- signUp
+- passwordRescue
+- posts
+- post
+- creatPost
+- editPost
+- adminPosts
+
+==================================
+RELAÇÃO DE COMPONENTES NECESSÁRIOS
+==================================
+
+- Header
+- Forms
+- Messages
+- Alerts
+- Menu
+- postsList
+- usersList
+- Footer

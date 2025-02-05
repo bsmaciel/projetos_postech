@@ -1,8 +1,8 @@
-import { useState } from 'react'
-import UserList from './components/lists/usersList';
-import AddUser from './components/forms/addUser';
-import './App.css'
-import CreatePost from './components/forms/creatPost';
+// import { useState } from 'react'
+import Header from './components/Header';
+import Footer from './components/Footer';
+import MainContent from './components/MainContent';
+import CreatePost from './Screems/createPost';
 
 /* interface List {
   id: number;
@@ -28,9 +28,13 @@ function App() {
 function App() {
 
   return (
-    <>
-      <CreatePost />
-    </>
+    <body>
+      <Header />
+      <MainContent>
+        <CreatePost />
+      </MainContent>
+      <Footer />
+    </body>
   )
 }  
 
