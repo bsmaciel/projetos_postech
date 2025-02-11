@@ -1,8 +1,8 @@
 import React from "react"
 import styled from 'styled-components';
 
-const ListPostContainer = styled.main`
-    background-color: #ffa600;
+const AddPostContainer = styled.main`
+    background-color: #d9ff00;
     color: #000000;
     text-align: center;
     padding: 10px 0;
@@ -12,14 +12,14 @@ const ListPostContainer = styled.main`
     height: 100%;
     `;
 
-const ListPost: React.FC = () => {
+const AddPost: React.FC = () => {
     return(
-        <ListPostContainer>
+        <AddPostContainer>
             <main>
-                <h1>ListPost</h1>
+                <h1>AddPost</h1>
             </main>
-        </ListPostContainer>
+        </AddPostContainer>
     )
 }
 
-export default ListPost;
+export default AddPost;
