@@ -9,8 +9,8 @@
 // import './App.css';
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Header from './components/Header';
-import Footer from './components/Footer';
+// import Header from './components/Header';
+// import Footer from './components/Footer';
 import MainContent from './components/MainContent';
 import Login from './Screens/login';
 import AdminPosts from './Screens/adminPosts';
@@ -31,7 +31,7 @@ function App() {
   return (
     <Router>
       <div>
-        <Header />
+        {/* <Header /> */}
         <MainContent>
           <Routes>
             <Route path="/" element={<Login />} />
@@ -45,21 +45,10 @@ function App() {
             <Route path="/signUp" element={<SignUp />} />
           </Routes>
         </MainContent>
-        <Footer />
+        {/* <Footer /> */}
       </div>
     </Router>
   );
 }
 
 export default App;
-
-/*   return (
-    <>
-      <Header />
-      <MainContent>
-        <Login />
-      </MainContent>
-      <Footer />
-    </>
-  )
-}   */
