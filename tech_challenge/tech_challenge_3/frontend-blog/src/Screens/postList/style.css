@@ -1,0 +1,122 @@
+/* Reset padrão */
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+} */
+
+/* /* Cabeçalho */
+/* header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background: #2D9CFA;
+    color: white;
+} */
+
+/* header h1 {
+    font-size: 16px;
+} */
+
+/* Container principal */
+/* .container {
+    padding: 15px;
+} */
+
+/* Post */
+.post {
+    background: #E3F2FD;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.autor {
+    color: #2D9CFA;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.titulo {
+    color: #2D9CFA;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.descricao {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Interação */
+.interacao {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+}
+
+.interacao span {
+    color: #2D9CFA;
+    display: flex;
+    align-items: center;
+}
+
+/* .interacao i {
+    margin-right: 5px;
+} */
+
+/* Botão "+" */
+.mais {
+    color: #2D9CFA;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+/* Paginação */
+.paginacao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.paginacao a, .paginacao span {
+    margin: 0 5px;
+    font-size: 14px;
+    color: #2D9CFA;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.paginacao .ativo {
+    background: #2D9CFA;
+    color: white;
+}
+
+.paginacao .desabilitado {
+    opacity: 0.5;
+}
+
+/* Rodapé */
+/* footer {
+    background: #2D9CFA;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+} */
+/* 
+footer i {
+    margin-right: 10px;
+    cursor: pointer;
+} */
