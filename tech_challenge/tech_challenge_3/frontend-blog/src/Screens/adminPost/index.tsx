@@ -3,14 +3,14 @@ import React from "react"
 import '@fortawesome/fontawesome-free/css/all.min.css'
 import '@fortawesome/fontawesome-free/js/all.min.js'
 
-import './post.css'
+import './adminPost.css'
 
-const Post: React.FC = () => {
+const AdminPost: React.FC = () => {
     return(
         <>
-            Post
+            AdminPost
         </>
     )
 }
 
-export default Post;
+export default AdminPost

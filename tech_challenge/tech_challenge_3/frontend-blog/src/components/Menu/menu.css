@@ -1,0 +1,65 @@
+/* Reset padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+/* Fundo azul */
+body {
+    background-color: #2D9CFA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Estrutura centralizada */
+.container {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilização do título */
+h1 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Estilização do subtítulo */
+.subtitulo {
+    font-size: 14px;
+    margin-bottom: 40px;
+}
+
+/* Links do menu */
+nav a {
+    display: block;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+    margin: 10px 0;
+}
+
+/* Botão de sair */
+.btn-sair {
+    margin-top: 50px;
+    padding: 10px 40px;
+    font-size: 16px;
+    color: white;
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Efeito de hover no botão */
+.btn-sair:hover {
+    background: white;
+    color: #2D9CFA;
+}
