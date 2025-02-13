@@ -14,6 +14,10 @@ header {
     padding: 15px;
     background: #2D9CFA;
     color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 header h1 {
@@ -22,15 +26,14 @@ header h1 {
 
 /* Container principal */
 .container {
-    padding: 15px;
+    padding: 80px 15px 60px; /* Espaço para o cabeçalho e rodapé */
 }
 
-/* Post */
-.post {
+/* Post Completo */
+.post-completo {
     background: #E3F2FD;
     padding: 15px;
     border-radius: 10px;
-    margin-bottom: 15px;
 }
 
 .autor {
@@ -46,61 +49,31 @@ header h1 {
     margin: 5px 0;
 }
 
-.descricao {
+.conteudo {
     font-size: 14px;
     color: #333;
     margin-bottom: 10px;
+    text-align: justify;
 }
 
 /* Interação */
 .interacao {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     font-size: 14px;
+    margin-top: 15px;
 }
 
 .interacao span {
     color: #2D9CFA;
     display: flex;
     align-items: center;
+    margin-right: 15px;
 }
 
 .interacao i {
     margin-right: 5px;
-}
-
-/* Botão "+" */
-.mais {
-    color: #2D9CFA;
-    font-size: 20px;
-    text-decoration: none;
-}
-
-/* Paginação */
-.paginacao {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-}
-
-.paginacao a, .paginacao span {
-    margin: 0 5px;
-    font-size: 14px;
-    color: #2D9CFA;
-    text-decoration: none;
-    padding: 5px 10px;
-    border-radius: 5px;
-}
-
-.paginacao .ativo {
-    background: #2D9CFA;
-    color: white;
-}
-
-.paginacao .desabilitado {
-    opacity: 0.5;
 }
 
 /* Rodapé */

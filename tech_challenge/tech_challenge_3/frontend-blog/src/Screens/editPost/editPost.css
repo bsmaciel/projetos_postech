@@ -1,0 +1,144 @@
+/* Reset padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Cabeçalho */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    background: #2D9CFA;
+    color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+header i {
+    position: absolute;
+    left: 15px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+header .fa-search {
+    position: absolute;
+    right: 15px;
+}
+
+/* Container */
+.container {
+    padding: 80px 20px 60px; /* Espaço para cabeçalho e rodapé */
+}
+
+/* Tabela */
+.table-container {
+    overflow-x: auto;
+    border: 2px solid #2D9CFA;
+    border-radius: 5px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #2D9CFA;
+}
+
+th {
+    background: #2D9CFA;
+    color: white;
+}
+
+td a {
+    color: #2D9CFA;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+td a:hover {
+    text-decoration: underline;
+}
+
+/* Formulário */
+.form-editar {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #2D9CFA;
+    border-radius: 5px;
+    font-size: 14px;
+    outline: none;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #2D9CFA;
+}
+
+textarea {
+    height: 150px;
+    resize: none;
+}
+
+/* Botões */
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.btn {
+    width: 48%;
+    padding: 12px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.limpar {
+    background: transparent;
+    border: 2px solid #2D9CFA;
+    color: #2D9CFA;
+}
+
+.editar {
+    background: #2D9CFA;
+    border: none;
+    color: white;
+}
+
+/* Rodapé */
+footer {
+    background: #2D9CFA;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer i {
+    margin-right: 10px;
+    cursor: pointer;
+}
