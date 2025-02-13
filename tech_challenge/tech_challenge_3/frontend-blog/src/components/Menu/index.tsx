@@ -1,3 +1,6 @@
+// import React from 'react'
+import './menu.css'
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>

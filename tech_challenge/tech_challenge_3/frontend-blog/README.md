@@ -95,3 +95,9 @@ RELAÇÃO DE COMPONENTES NECESSÁRIOS
 - postsList
 - usersList
 - Footer
+
+===================================
+CONTROLE DE AÇÕES
+===================================
+
+Retomar a insersão dos códigos HTML e CSS a partir do item landingPage. (12/2/25)
