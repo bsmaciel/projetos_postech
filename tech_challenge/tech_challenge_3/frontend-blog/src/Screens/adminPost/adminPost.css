@@ -1,0 +1,86 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Tabela */
+.table-container {
+    width: 90%;
+    margin: 20px auto;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #2196F3;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #E3F2FD;
+    font-weight: bold;
+}
+
+.edit {
+    color: #2196F3;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.delete {
+    color: red;
+    text-decoration: none;
+}
+
+/* Campos de Entrada */
+.form-container {
+    width: 90%;
+    margin: 20px auto;
+}
+
+.input-box, .text-area {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #2196F3;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.text-area {
+    height: 150px;
+    resize: none;
+}
+
+/* Botões */
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cancel-btn, .save-btn {
+    width: 45%;
+    padding: 10px;
+    border: 2px solid #2196F3;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.cancel-btn {
+    background-color: white;
+    color: #2196F3;
+}
+
+.save-btn {
+    background-color: #2196F3;
+    color: white;
+}

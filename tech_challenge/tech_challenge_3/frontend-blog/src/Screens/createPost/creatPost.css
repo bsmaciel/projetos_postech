@@ -6,27 +6,6 @@
     font-family: Arial, sans-serif;
 }
 
-/* Cabeçalho */
-header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 15px;
-    background: #2D9CFA;
-    color: white;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-}
-
-header i {
-    position: absolute;
-    left: 15px;
-    font-size: 20px;
-    cursor: pointer;
-}
-
 /* Container */
 .container {
     padding: 80px 20px 60px; /* Espaço para cabeçalho e rodapé */
@@ -86,20 +65,3 @@ textarea {
     color: white;
 }
 
-/* Rodapé */
-footer {
-    background: #2D9CFA;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 15px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-
-footer i {
-    margin-right: 10px;
-    cursor: pointer;
-}
