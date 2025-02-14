@@ -1,0 +1,7 @@
+/* Container principal */
+.container {
+    width: 100%;
+    max-width: 350px;
+    background-color: rgb(0, 242, 255);
+
+}

@@ -12,35 +12,10 @@ import PasswordReset from './Screens/passwordReset'
 import SignUp from './Screens/signUp'
 import ViewPost from './Screens/viewPost'
 
-<<<<<<< HEAD
+import './App.css'
+
 // import '@fortawesome/fontawesome-free/css/all.min.css'
 // import '@fortawesome/fontawesome-free/js/all.min.js'
-=======
-// import { useState } from 'react'
-// import  { useEffect } from 'react';
-// import  { useReducer } from 'react';
-// import api from './api';
-
-// import { ? } from './types';
-// import './App.css';
-
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-// import Header from './components/Header';
-// import Footer from './components/Footer';
-import MainContent from './components/MainContent';
-import Login from './Screens/login';
-import AdminPosts from './Screens/adminPosts';
-import CreatePost from './Screens/createPost';
-import EditPost from './Screens/editPost';
-import LandingPage from './Screens/landingPage';
-import PasswordRescue from './Screens/passwordRescue';
-import Post from './Screens/post';
-import PostList from './Screens/postList';
-import SignUp from './Screens/signUp';
-
-import '@fortawesome/fontawesome-free/css/all.min.css';
-import '@fortawesome/fontawesome-free/js/all.min.js';
->>>>>>> 82e33fd (Desenvolvimento do layout do Tech Challeng, styled-components e display flex)
 
 
 function App() {
@@ -48,11 +23,7 @@ function App() {
   return (
     <Router>
       {/* <Header /> */}
-      <div>
-<<<<<<< HEAD
-=======
-        {/* <Header /> */}
->>>>>>> 82e33fd (Desenvolvimento do layout do Tech Challeng, styled-components e display flex)
+      {/* <div> */}
         <MainContent>
           <Routes>
             <Route path="/adminPost" element={<AdminPost />} />
@@ -66,17 +37,12 @@ function App() {
             <Route path="/viewpost" element={<ViewPost />} />
           </Routes>
         </MainContent>
-<<<<<<< HEAD
-=======
-        {/* <Footer /> */}
->>>>>>> 82e33fd (Desenvolvimento do layout do Tech Challeng, styled-components e display flex)
-      </div>
+      {/* </div> */}
       {/* <Footer /> */}
     </Router>
   )
 }
 
-<<<<<<< HEAD
 export default App
 
 /*   return (
@@ -89,6 +55,3 @@ export default App
     </>
   )
 }   */
-=======
-export default App;
->>>>>>> 82e33fd (Desenvolvimento do layout do Tech Challeng, styled-components e display flex)
