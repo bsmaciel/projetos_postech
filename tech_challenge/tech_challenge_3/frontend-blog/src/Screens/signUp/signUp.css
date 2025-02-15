@@ -1,12 +1,3 @@
-/* Reset básico */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-    text-align: center;
-}
-
 /* Estilização do cabeçalho */
 .top-bar {
     background-color: white;

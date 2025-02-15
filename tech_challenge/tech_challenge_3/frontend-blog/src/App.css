@@ -1,3 +1,11 @@
+/* Reset padrão */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
 /* body {
   display: flex;
   flex-direction: column;
@@ -12,10 +20,12 @@
 } */
 
 #root {
-  max-width: 1280px;
+  /* max-width: 1280px; */
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  /* background-color: #00ff11; */
+  color: rgba(255, 255, 255, 0.87);
 }
 
 /* .logo {
