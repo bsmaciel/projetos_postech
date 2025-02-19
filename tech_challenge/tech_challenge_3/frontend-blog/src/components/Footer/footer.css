@@ -11,11 +11,11 @@ footer {
     background: #2D9CFA;
     color: white;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center; */
+    /* align-items: center; */
     padding: 15px;
-    position: fixed;
-    bottom: 0;
+    /* position: fixed; */
+    /* bottom: 0; */
     width: 100%;
 }
 
@@ -28,10 +28,10 @@ footer i {
 .bottom-bar {
     background-color: #2196F3;
     color: white;
-    text-align: center;
+    /* text-align: center; */
     padding: 15px;
     font-size: 18px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center; */
+    /* align-items: center; */
 }

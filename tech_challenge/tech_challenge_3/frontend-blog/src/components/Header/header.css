@@ -1,12 +1,4 @@
-/* Reset padrão */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
-
-/* Cabeçalho */
+/* Cabeçalho */ /* OK */
 header {
     display: flex;
     justify-content: space-between;
@@ -16,17 +8,17 @@ header {
     color: white;
 }
 
-header h1 {
-    font-size: 16px;
-}
+/* header h1 {
+    font-size: 2em;
+} */
 
 /* Container principal */
-.container {
+/* .container-header {
     padding: 15px;
-}
+} */
 
 /* Estilização do cabeçalho */
-.top-bar {
+/* .top-bar {
     background-color: #2196F3;
     color: white;
     display: flex;
@@ -34,9 +26,14 @@ header h1 {
     align-items: center;
     padding: 15px;
     font-size: 18px;
-}
+} */
 
-.menu-icon, .search-icon {
+/* .menu-icon, .search-icon {
     font-size: 20px;
+    cursor: pointer;
+} */
+
+header i {
+    margin-right: 10px;
     cursor: pointer;
 }

@@ -1,17 +1,90 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+/* Reset padrão */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* width: 100%; */
+  /* height: 100%; */
+  color: rgba(152, 241, 255, 0.87);
+  font-family: Montserrat;
   line-height: 1.5;
-  font-weight: 900;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #00ffe5;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  /* font-weight: 900; */
+  /* font-synthesis: none; */
+  /* text-rendering: optimizeLegibility; */
+  /* color-scheme: light dark; */
+  /* -webkit-font-smoothing: antialiased; */
+  /* -moz-osx-font-smoothing: grayscale; */
 }
+
+:root {
+  border: solid 10px red;
+
+  /* background-color: #a4a4a4; */
+}
+
+body {
+  border: solid 10px blue;
+
+  display: flex;
+  flex-direction: column;
+}
+
+#root {
+  border: solid 10px green;
+}
+
+.container-adminPost {
+  border: solid 10px yellow;
+}
+
+.container-createPost {
+  border: solid 10px yellow;
+}
+
+.container-listPost {
+  border: solid 10px yellow;
+}
+
+.container-login {
+  border: solid 10px yellow;
+  width: 50%;
+  display: flex;
+  ;
+}
+
+.container-passwordReset {
+  border: solid 10px yellow;
+}
+
+.container-signUp {
+  border: solid 10px yellow;
+}
+
+.container-viewPost {
+  border: solid 10px yellow;
+}
+
+/* * {
+  margin: 0;
+  padding: 0;
+} */
+  
+/* <weight>: Use a value from 100 to 900 */
+/* <uniquifier>: Use a unique and descriptive class name */
+/* .montserrat-fonts {
+  font-family: "Montserrat", serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+} */
+
+/* body {
+  background-color: purple;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* height: 100vh; */
+/* } */ 
+
 
 /* a {
   font-weight: 500;
