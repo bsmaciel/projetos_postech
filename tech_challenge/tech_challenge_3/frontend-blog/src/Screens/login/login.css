@@ -1,82 +1,90 @@
+/* Reset padrão */
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    text-align: center;
+} */
+
 /* Estrutura centralizada */
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    /* background-color: rgb(255, 0, 0); */
-}
+/* body { */
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* height: 100vh; */
+    /* background-color: white; */
+/* } */
 
 /* Container principal */
-.container {
-    width: 100%;
-    max-width: 350px;
-    /* background-color: rgb(255, 247, 0); */
-
-}
+/* .container { */
+    /* width: 100%; */
+    /* max-width: 350px; */
+    /* height: 100vh; */
+/* } */
 
 /* Estilização do título */
-.titulo {
-    color: #2D9CFA;
-    font-size: 14px;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
+/* .titulo { */
+    /* color: #2D9CFA; */
+    /* font-size: 14px; */
+    /* font-weight: bold; */
+    /* margin-bottom: 20px; */
+/* } */
 
-/* Estilização do subtítulo OK */
-.subtitulo {
-    color: #2D9CFA;
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 30px;
-}
+/* Estilização do subtítulo */
+/* .subtitulo { */
+    /* color: #2D9CFA; */
+    /* font-size: 20px; */
+    /* font-weight: bold; */
+    /* margin-bottom: 30px; */
+/* } */
 
-/* Estilização dos inputs OK */
-input {
-    width: 100%;
-    padding: 12px;
-    margin: 8px 0;
-    border: 2px solid #2D9CFA;
-    border-radius: 5px;
-    font-size: 14px;
-    outline: none;
-    background: transparent;
-    color: #2D9CFA;
-}
+/* Estilização dos inputs */
+/* input { */
+    /* width: 100%; */
+    /* padding: 12px; */
+    /* margin: 8px 0; */
+    /* border: 2px solid #2D9CFA; */
+    /* border-radius: 5px; */
+    /* font-size: 14px; */
+    /* outline: none; */
+    /* background: transparent; */
+    /* color: #2D9CFA; */
+/* } */
 
-/* Placeholder azul 0K */
-input::placeholder {
-    color: #2D9CFA;
-    opacity: 1;
-}
+/* Placeholder azul */
+/* input::placeholder { */
+    /* color: #2D9CFA; */
+    /* opacity: 1; */
+/* } */
 
-/* Links OK */
-.links {
-    display: flex;
-    justify-content: space-between;
-    font-size: 12px;
-    margin: 10px 0 20px;
-}
+/* Links */
+/* .links { */
+    /* display: flex; */
+    /* justify-content: space-between; */
+    /* font-size: 12px; */
+    /* margin: 10px 0 20px; */
+/* } */
 
-.links a {
-    color: #2D9CFA;
-    text-decoration: none;
-}
+/* .links a { */
+    /* color: #2D9CFA; */
+    /* text-decoration: none; */
+/* } */
 
-/* Botão de entrar OK */
-.btn-entrar {
-    width: 100%;
-    padding: 12px;
-    font-size: 16px;
-    font-weight: bold;
-    color: white;
-    background-color: #2D9CFA;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
+/* Botão de entrar */
+/* .btn-entrar { */
+    /* width: 100%; */
+    /* padding: 12px; */
+    /* font-size: 16px; */
+    /* font-weight: bold; */
+    /* color: white; */
+    /* background-color: #2D9CFA; */
+    /* border: none; */
+    /* border-radius: 5px; */
+    /* cursor: pointer; */
+/* } */
 
-/* Efeito de hover no botão OK */
-.btn-entrar:hover {
-    background-color: #1A7DC4;
-}
+/* Efeito de hover no botão */
+/* .btn-entrar:hover { */
+    /* background-color: #1A7DC4; */
+/* } */

@@ -1,32 +1,21 @@
-/* Reset padrão */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
-}
-
-/* body {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  margin: 0;
-} */
+/* Comanda o id root que está no index.html */
+/* #root { */
+  /* width: 100%; */
+  /* max-width: 800px; */
+  /* margin: 0 auto; */
+  /* padding: 2rem; */
+  /* text-align: center; */
+  /* background-color: #008e09; */
+  /* color: rgba(255, 255, 255, 0.87); */
+  /* display: flex; */
+  /* position: relative; */
+/* } */
 
 /* @media (max-width: 768px) {
   .header, .footer {
     padding: 10px 0;
   }
 } */
-
-#root {
-  /* max-width: 1280px; */
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-  /* background-color: #00ff11; */
-  color: rgba(255, 255, 255, 0.87);
-}
 
 /* .logo {
   height: 6em;

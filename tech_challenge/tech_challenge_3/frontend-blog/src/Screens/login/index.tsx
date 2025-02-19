@@ -1,12 +1,13 @@
-import React from "react"
+import React from 'react'
 import './login.css'
 
-/* import '@fortawesome/fontawesome-free/css/all.min.css'
-import '@fortawesome/fontawesome-free/js/all.min.js' */
+// import '@fortawesome/fontawesome-free/css/all.min.css'
+// import '@fortawesome/fontawesome-free/js/all.min.js'
 
 const Login: React.FC = () => {
     return(
-        <div className="container">
+        <div className="container-login">
+            <i className="fas fa-arrow-left"></i>
             <h2 className="titulo">LOGIN</h2>
             <h1 className="subtitulo">Acesse sua conta</h1>
 
@@ -22,7 +23,7 @@ const Login: React.FC = () => {
 
                 <button type="submit" className="btn-entrar">ENTRAR</button>
             </form>
-        </div>   
+        </div>
     )
 }
 

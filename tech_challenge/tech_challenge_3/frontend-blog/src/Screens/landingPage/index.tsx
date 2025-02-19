@@ -7,9 +7,9 @@ import './landingPage.css'
 
 const LandingPage: React.FC = () => {
     return(
-            <>
-                LandingPage
-            </>
+            <div className="container-landingPage">
+                <h1>LandingPage</h1>
+            </div>
     )
 }
 
