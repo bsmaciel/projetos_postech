@@ -5,7 +5,7 @@
   box-sizing: border-box;
   /* width: 100%; */
   /* height: 100%; */
-  color: rgba(152, 241, 255, 0.87);
+  color: rgba(0, 0, 0, 0.87);
   font-family: Montserrat;
   line-height: 1.5;
   /* font-weight: 900; */
@@ -16,48 +16,66 @@
   /* -moz-osx-font-smoothing: grayscale; */
 }
 
+/* O :root é o próprio html */
 :root {
   border: solid 10px red;
-
-  /* background-color: #a4a4a4; */
 }
 
+/* O body também é o próprio html. A div #root e a div class container estão dentro dela. */
 body {
   border: solid 10px blue;
-
+  width: 100%;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
 }
 
+/* A div #root é o container da div container. Por isso, ela controla a centralização desta. */
 #root {
   border: solid 10px green;
+  display: flex;
+  justify-content: center;
+  width: 80%; /* % de body */
 }
 
 .container-adminPost {
   border: solid 10px yellow;
+  width: 50%;
 }
 
 .container-createPost {
   border: solid 10px yellow;
+  width: 50%;
+}
+
+.container-editPost {
+  border: solid 10px yellow;
+  width: 50%;
+
 }
 
 .container-listPost {
   border: solid 10px yellow;
+  width: 50%;
+
 }
 
 .container-login {
   border: solid 10px yellow;
-  width: 50%;
+  width: 50%; /* % da div #root */
   display: flex;
-  ;
+  justify-content: center;
 }
 
 .container-passwordReset {
   border: solid 10px yellow;
+  width: 50%;
+
 }
 
 .container-signUp {
   border: solid 10px yellow;
+  width: 50%;
+
 }
 
 .container-viewPost {
