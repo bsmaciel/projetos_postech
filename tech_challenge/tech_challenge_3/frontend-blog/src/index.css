@@ -3,8 +3,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* width: 100%; */
-  /* height: 100%; */
+  width: 100%;
+  height: 100%;
   color: rgba(0, 0, 0, 0.87);
   font-family: Montserrat;
   line-height: 1.5;
@@ -19,6 +19,7 @@
 /* O :root é o próprio html */
 :root {
   border: solid 10px red;
+  min-width: 340px;
 }
 
 /* O body também é o próprio html. A div #root e a div class container estão dentro dela. */
@@ -27,6 +28,7 @@ body {
   width: 100%;
   display: flex;
   justify-content: center;
+  min-width: 340px;
 }
 
 /* A div #root é o container da div container. Por isso, ela controla a centralização desta. */
@@ -34,7 +36,8 @@ body {
   border: solid 10px green;
   display: flex;
   justify-content: center;
-  width: 80%; /* % de body */
+  width: 100%; /* % de body */
+  min-width: 340px;
 }
 
 .container-adminPost {
@@ -63,6 +66,7 @@ body {
   border: solid 10px yellow;
   width: 50%; /* % da div #root */
   display: flex;
+  flex-direction: column;
   justify-content: center;
 }
 
