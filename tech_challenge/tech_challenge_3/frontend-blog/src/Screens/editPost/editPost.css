@@ -1,5 +1,5 @@
 /* Tabela */
-.table-container {
+/* .table-container {
     overflow-x: auto;
     border: 2px solid #2D9CFA;
     border-radius: 5px;
@@ -30,9 +30,9 @@ td a {
 td a:hover {
     text-decoration: underline;
 }
-
+ */
 /* Formulário */
-.form-editar {
+/* .form-editar {
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -57,9 +57,9 @@ textarea {
     height: 150px;
     resize: none;
 }
-
+ */
 /* Botões */
-.buttons {
+/* .buttons {
     display: flex;
     justify-content: space-between;
     margin-top: 10px;
@@ -84,4 +84,4 @@ textarea {
     background: #2D9CFA;
     border: none;
     color: white;
-}
+} */

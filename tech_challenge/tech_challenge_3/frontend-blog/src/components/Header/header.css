@@ -1,12 +1,12 @@
 /* Cabeçalho */ /* OK */
-header {
+/* header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px;
     background: #2D9CFA;
     color: white;
-}
+} */
 
 /* header h1 {
     font-size: 2em;

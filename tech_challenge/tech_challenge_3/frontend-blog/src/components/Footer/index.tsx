@@ -8,8 +8,8 @@ const Footer: React.FC = () => {
     return(
         <>
         <footer>
-        <i className="fas fa-arrow-left back-icon"></i>
-        <span>FIAP</span>
+            <i className="fas fa-arrow-left back-icon"></i>
+            <span>FIAP</span>
         </footer>
         </>
     )

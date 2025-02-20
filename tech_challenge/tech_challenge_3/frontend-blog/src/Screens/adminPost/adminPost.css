@@ -1,5 +1,5 @@
 /* Tabela */
-.table-container {
+/* .table-container {
     width: 90%;
     margin: 20px auto;
     overflow-x: auto;
@@ -30,10 +30,10 @@ th {
 .delete {
     color: red;
     text-decoration: none;
-}
+} */
 
 /* Campos de Entrada */
-.form-container {
+/* .form-container {
     width: 90%;
     margin: 20px auto;
 }
@@ -50,10 +50,10 @@ th {
 .text-area {
     height: 150px;
     resize: none;
-}
+} */
 
 /* Botões */
-.buttons {
+/* .buttons {
     display: flex;
     justify-content: space-between;
 }
@@ -75,4 +75,4 @@ th {
 .save-btn {
     background-color: #2196F3;
     color: white;
-}
+} */
