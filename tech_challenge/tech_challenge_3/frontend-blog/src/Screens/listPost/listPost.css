@@ -1,10 +1,10 @@
 /* Container principal */
-.container {
+/* .container {
     padding: 15px;
-}
+} */
 
 /* Post */
-.post {
+/* .post {
     background: #E3F2FD;
     padding: 15px;
     border-radius: 10px;
@@ -28,10 +28,10 @@
     font-size: 14px;
     color: #333;
     margin-bottom: 10px;
-}
+} */
 
 /* Interação */
-.interacao {
+/* .interacao {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -46,17 +46,17 @@
 
 .interacao i {
     margin-right: 5px;
-}
+} */
 
 /* Botão "+" */
-.mais {
+/* .mais {
     color: #2D9CFA;
     font-size: 20px;
     text-decoration: none;
-}
+} */
 
 /* Paginação */
-.paginacao {
+/* .paginacao {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -79,4 +79,4 @@
 
 .paginacao .desabilitado {
     opacity: 0.5;
-}
+} */

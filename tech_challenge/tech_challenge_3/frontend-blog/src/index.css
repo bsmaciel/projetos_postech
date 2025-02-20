@@ -2,9 +2,6 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  width: 100%;
-  height: 100%;
   color: rgba(0, 0, 0, 0.87);
   font-family: Montserrat;
   line-height: 1.5;
@@ -16,28 +13,33 @@
   /* -moz-osx-font-smoothing: grayscale; */
 }
 
-/* O :root é o próprio html */
-:root {
-  border: solid 10px red;
-  min-width: 340px;
+*, *::before, *::after {
+  box-sizing: border-box;
 }
 
-/* O body também é o próprio html. A div #root e a div class container estão dentro dela. */
+/* O :root é a própria tag html. O body, a div #root e a div class container estão dentro dela. */
+:root {
+  border: solid 10px red;
+  min-width: 340px; /* Ok */
+  /* width: 100%; */
+  height: 100%; /* Ok */
+}
+
+/* O body também ocupa o espaço da tag html, mas é pai da div #root e da div class container. */
 body {
   border: solid 10px blue;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  min-width: 340px;
+  min-width: 340px; /* Ok */
+  height: 100%; /* Ok */
 }
 
 /* A div #root é o container da div container. Por isso, ela controla a centralização desta. */
 #root {
   border: solid 10px green;
+  min-width: 340px; /* Ok */
   display: flex;
   justify-content: center;
   width: 100%; /* % de body */
-  min-width: 340px;
+  height: 100%;
 }
 
 .container-adminPost {
@@ -53,17 +55,17 @@ body {
 .container-editPost {
   border: solid 10px yellow;
   width: 50%;
-
 }
 
 .container-listPost {
   border: solid 10px yellow;
   width: 50%;
-
 }
 
+/* Tive que ara centralizar e distribuir os elementos filho. */
 .container-login {
   border: solid 10px yellow;
+  min-width: 340px; /* Ok */
   width: 50%; /* % da div #root */
   display: flex;
   flex-direction: column;

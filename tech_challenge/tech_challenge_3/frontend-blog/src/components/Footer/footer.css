@@ -1,37 +1,37 @@
 /* Reset padrão */
-* {
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
-}
+} */
 
 /* Rodapé */
-footer {
-    background: #2D9CFA;
-    color: white;
-    display: flex;
+/* footer { */
+    /* background: #2D9CFA; */
+    /* color: white; */
+    /* display: flex; */
     /* justify-content: center; */
     /* align-items: center; */
-    padding: 15px;
+    /* padding: 15px; */
     /* position: fixed; */
     /* bottom: 0; */
-    width: 100%;
-}
+    /* width: 100%; */
+/* } */
 
-footer i {
+/* footer i {
     margin-right: 10px;
     cursor: pointer;
-}
+} */
 
 /* Rodapé */
-.bottom-bar {
-    background-color: #2196F3;
-    color: white;
+/* .bottom-bar { */
+    /* background-color: #2196F3; */
+    /* color: white; */
     /* text-align: center; */
-    padding: 15px;
-    font-size: 18px;
-    display: flex;
+    /* padding: 15px; */
+    /* font-size: 18px; */
+    /* display: flex; */
     /* justify-content: center; */
     /* align-items: center; */
-}
+/* } */
