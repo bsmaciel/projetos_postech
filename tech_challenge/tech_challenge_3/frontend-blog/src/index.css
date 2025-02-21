@@ -2,8 +2,8 @@
 * {
   margin: 0;
   padding: 0;
-  color: rgba(0, 0, 0, 0.87);
-  font-family: Montserrat;
+  /* color: rgba(255, 0, 0, 0.87); */
+  font-family: Arial, Helvetica, sans-serif;
   line-height: 1.5;
   /* font-weight: 900; */
   /* font-synthesis: none; */
@@ -17,25 +17,22 @@
   box-sizing: border-box;
 }
 
-/* O :root é a própria tag html. O body, a div #root e a div class container estão dentro dela. */
 :root {
   border: solid 10px red;
-  min-width: 340px; /* Ok */
+  min-width: 320px; /* Ok */
   /* width: 100%; */
   height: 100%; /* Ok */
 }
 
-/* O body também ocupa o espaço da tag html, mas é pai da div #root e da div class container. */
 body {
   border: solid 10px blue;
-  min-width: 340px; /* Ok */
+  min-width: 320px; /* Ok */
   height: 100%; /* Ok */
 }
 
-/* A div #root é o container da div container. Por isso, ela controla a centralização desta. */
 #root {
   border: solid 10px green;
-  min-width: 340px; /* Ok */
+  min-width: 320px; /* Ok */
   display: flex;
   justify-content: center;
   width: 100%; /* % de body */
@@ -62,35 +59,19 @@ body {
   width: 50%;
 }
 
-/* Tive que ara centralizar e distribuir os elementos filho. */
-.container-login {
-  border: solid 10px yellow;
-  min-width: 340px; /* Ok */
-  width: 50%; /* % da div #root */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
 .container-passwordReset {
   border: solid 10px yellow;
   width: 50%;
-
-}
-
-.container-signUp {
-  border: solid 10px yellow;
-  width: 50%;
-
 }
 
 .container-viewPost {
   border: solid 10px yellow;
 }
 
-/* * {
-  margin: 0;
-  padding: 0;
+/* Estilização retorno página anterior */
+/* .fa-arrow-left {
+  color: #2D9CFA;
+  cursor: pointer;
 } */
   
 /* <weight>: Use a value from 100 to 900 */
@@ -102,19 +83,12 @@ body {
   font-style: normal;
 } */
 
-/* body {
-  background-color: purple;
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* height: 100vh; */
-/* } */ 
-
-
 /* a {
   font-weight: 500;
   color: #646cff;
   text-decoration: inherit;
 }
+
 a:hover {
   color: #535bf2;
 } */

@@ -1,14 +1,16 @@
 import React from 'react'
 import './signUp.css'
 
-// import '@fortawesome/fontawesome-free/css/all.min.css'
-// import '@fortawesome/fontawesome-free/js/all.min.js'
+import '@fortawesome/fontawesome-free/css/all.min.css'
+import '@fortawesome/fontawesome-free/js/all.min.js'
 
 const SignUp: React.FC = () => {
     return(
         <div className="container-signUp">
-            <i className="fas fa-arrow-left back-icon"></i>
-            <h2 className="titulo">CADASTRO</h2>
+            <div className="signUp-top-bar">
+                <i className="fas fa-arrow-left"></i>
+                <h2 className="pageTitle">CADASTRO</h2>
+            </div>
             <h1 className="subtitulo">Crie sua conta</h1>
 
             <form action="#" method="POST">

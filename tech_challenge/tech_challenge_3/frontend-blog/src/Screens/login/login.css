@@ -1,90 +1,97 @@
-/* Reset padrão */
-/* * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-    text-align: center;
-} */
-
-/* Estrutura centralizada */
-/* body { */
-    /* display: flex; */
-    /* justify-content: center; */
-    /* align-items: center; */
-    /* height: 100vh; */
-    /* background-color: white; */
-/* } */
-
 /* Container principal */
-/* .container-login { */
-    /* width: 100%; */
-    /* max-width: 350px; */
-    /* height: 100vh; */
-/* } */
+.container-login {
+    border: solid 10px yellow;
+    width: 50%; /* % da div #root */
+    min-width: 340px;
+    max-width: 500px;
+    height: 100%;
+}
 
-/* Estilização do título */
-/* .titulo { */
-    /* color: #2D9CFA; */
-    /* font-size: 14px; */
-    /* font-weight: bold; */
-    /* margin-bottom: 20px; */
-/* } */
+/* Estilização do topo da página */
+.login-top-bar {
+    background: #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0 15px 15px;
+    width: 54%;
+}
+
+/* Estilização retorno página anterior */
+.fa-arrow-left {
+    color: #2D9CFA;
+    cursor: pointer;
+}
+
+/* Estilização do título da página */
+.pageTitle {
+    color: #2D9CFA;
+    font-size: 14px;
+    font-weight: bold;
+}
 
 /* Estilização do subtítulo */
-/* .subtitulo { */
-    /* color: #2D9CFA; */
-    /* font-size: 20px; */
-    /* font-weight: bold; */
-    /* margin-bottom: 30px; */
-/* } */
+.subtitulo {
+    color: #2D9CFA;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-align: center;
+    padding: 4em 0 4em;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
 /* Estilização dos inputs */
-/* input { */
-    /* width: 100%; */
-    /* padding: 12px; */
-    /* margin: 8px 0; */
-    /* border: 2px solid #2D9CFA; */
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 2px solid #2D9CFA;
     /* border-radius: 5px; */
-    /* font-size: 14px; */
-    /* outline: none; */
-    /* background: transparent; */
-    /* color: #2D9CFA; */
-/* } */
+    font-size: 14px;
+    outline: none;
+    background: transparent;
+    color: #2D9CFA;
+}
 
 /* Placeholder azul */
-/* input::placeholder { */
-    /* color: #2D9CFA; */
-    /* opacity: 1; */
-/* } */
+input::placeholder {
+    color: #2D9CFA;
+    opacity: 1;
+}
 
 /* Links */
-/* .links { */
-    /* display: flex; */
-    /* justify-content: space-between; */
-    /* font-size: 12px; */
-    /* margin: 10px 0 20px; */
-/* } */
+.links {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    margin: 5px 10px 40px 10px;
+}
 
-/* .links a { */
-    /* color: #2D9CFA; */
-    /* text-decoration: none; */
-/* } */
+.links a {
+    color: #2D9CFA;
+    text-decoration: none;
+}
 
 /* Botão de entrar */
-/* .btn-entrar { */
-    /* width: 100%; */
-    /* padding: 12px; */
-    /* font-size: 16px; */
-    /* font-weight: bold; */
-    /* color: white; */
-    /* background-color: #2D9CFA; */
-    /* border: none; */
+.btn-entrar {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #2D9CFA;
+    border: none;
     /* border-radius: 5px; */
-    /* cursor: pointer; */
-/* } */
+    cursor: pointer;
+}
 
 /* Efeito de hover no botão */
-/* .btn-entrar:hover { */
-    /* background-color: #1A7DC4; */
-/* } */
+.btn-entrar:hover {
+    background-color: #1A7DC4;
+}
