@@ -13,7 +13,7 @@ const SignUp: React.FC = () => {
             </div>
             <h1 className="subtitulo">Crie sua conta</h1>
 
-            <form action="#" method="POST">
+            <form className="signUp-form" action="#" method="POST">
                 <input type="text" placeholder="Nome completo" required />
                 <input type="email" placeholder="Email" required />
                 <input type="password" placeholder="Senha" required />

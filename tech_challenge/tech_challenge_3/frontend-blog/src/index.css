@@ -2,7 +2,7 @@
 * {
   margin: 0;
   padding: 0;
-  /* color: rgba(255, 0, 0, 0.87); */
+  color: #2D9CFA;
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.5;
   /* font-weight: 900; */
@@ -18,6 +18,7 @@
 }
 
 :root {
+  background-color: #303030;
   border: solid 10px red;
   min-width: 320px; /* Ok */
   /* width: 100%; */
@@ -68,31 +69,630 @@ body {
   border: solid 10px yellow;
 }
 
+/****************************
+ESTILIZAÇÃO PÁGINA ADMIN POST
+****************************/
+
+/* Tabela */
+/* .table-container {
+    width: 90%;
+    margin: 20px auto;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #2196F3;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #E3F2FD;
+    font-weight: bold;
+}
+
+.edit {
+    color: #2196F3;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.delete {
+    color: red;
+    text-decoration: none;
+} */
+
+/* Campos de Entrada */
+/* .form-container {
+    width: 90%;
+    margin: 20px auto;
+}
+
+.input-box, .text-area {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #2196F3;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.text-area {
+    height: 150px;
+    resize: none;
+} */
+
+/* Botões */
+/* .buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cancel-btn, .save-btn {
+    width: 45%;
+    padding: 10px;
+    border: 2px solid #2196F3;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.cancel-btn {
+    background-color: white;
+    color: #2196F3;
+}
+
+.save-btn {
+    background-color: #2196F3;
+    color: white;
+} */
+
+/*****************************
+ESTILIZAÇÃO PÁGINA CREATE POST
+*****************************/
+
+/* Container */
+/* .container { */
+    /* padding: 80px 20px 60px; */ /* Espaço para cabeçalho e rodapé */
+/* } */
+
+/* Formulário */
+/* .form-post {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+} */
+
+/* input, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #2D9CFA;
+    border-radius: 5px;
+    font-size: 14px;
+    outline: none;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #2D9CFA;
+}
+
+textarea {
+    height: 150px;
+    resize: none;
+} */
+
+/* Botões */
+/* .buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.btn {
+    width: 48%;
+    padding: 12px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.limpar {
+    background: transparent;
+    border: 2px solid #2D9CFA;
+    color: #2D9CFA;
+}
+
+.criar {
+    background: #2D9CFA;
+    border: none;
+    color: white;
+} */
+
+/***********************
+ESTILOS PÁGINA EDIT POST
+***********************/
+
+/* Tabela */
+/* .table-container {
+    overflow-x: auto;
+    border: 2px solid #2D9CFA;
+    border-radius: 5px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #2D9CFA;
+}
+
+th {
+    background: #2D9CFA;
+    color: white;
+}
+
+td a {
+    color: #2D9CFA;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+td a:hover {
+    text-decoration: underline;
+}
+ */
+/* Formulário */
+/* .form-editar {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #2D9CFA;
+    border-radius: 5px;
+    font-size: 14px;
+    outline: none;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #2D9CFA;
+}
+
+textarea {
+    height: 150px;
+    resize: none;
+}
+ */
+/* Botões */
+/* .buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.btn {
+    width: 48%;
+    padding: 12px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.limpar {
+    background: transparent;
+    border: 2px solid #2D9CFA;
+    color: #2D9CFA;
+}
+
+.editar {
+    background: #2D9CFA;
+    border: none;
+    color: white;
+} */
+
+/***********************
+ESTILOS PÁGINA LIST POST
+***********************/
+
+/* Container principal */
+/* .container {
+    padding: 15px;
+} */
+
+/* Post */
+/* .post {
+    background: #E3F2FD;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.autor {
+    color: #2D9CFA;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.titulo {
+    color: #2D9CFA;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.descricao {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 10px;
+} */
+
+/* Interação */
+/* .interacao {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+}
+
+.interacao span {
+    color: #2D9CFA;
+    display: flex;
+    align-items: center;
+}
+
+.interacao i {
+    margin-right: 5px;
+} */
+
+/* Botão "+" */
+/* .mais {
+    color: #2D9CFA;
+    font-size: 20px;
+    text-decoration: none;
+} */
+
+/* Paginação */
+/* .paginacao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.paginacao a, .paginacao span {
+    margin: 0 5px;
+    font-size: 14px;
+    color: #2D9CFA;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.paginacao .ativo {
+    background: #2D9CFA;
+    color: white;
+}
+
+.paginacao .desabilitado {
+    opacity: 0.5;
+} */
+
+/*******************
+ESTILOS PÁGINA LOGIN
+*******************/
+
+/* Container principal */
+.container-login {
+  display: flex;
+  flex-direction: column;
+  background-color: #fffffb;
+  border: solid 10px yellow;
+  width: 50%; /* % da div #root */
+  min-width: 340px;
+  max-width: 500px;
+  height: 100%;
+}
+
+/* Estilização do topo da página */
+.login-top-bar {
+  background: #fffffb;
+  display: grid;
+  grid-template-columns:auto 1fr; 
+  align-items: center;
+  padding: 15px 29px 15px 15px;
+  width: 100%;
+}
+
+/* Estilização retorno página anterior */
+.fa-arrow-left {
+  /* color: #2D9CFA; */
+  cursor: pointer;
+}
+
+/* Estilização do título da página */
+.pageTitle {
+  /* color: #2D9CFA; */
+  font-size: 14px;
+  font-weight: bold;
+  justify-self: center;
+}
+
+/* Estilização do subtítulo */
+.subtitulo {
+  /* color: #2D9CFA; */
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  padding: 4em 0 4em;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+/* Estilização dos inputs */
+input {
+  width: 85%;
+  height: 4em;
+  padding: 12px 20px;
+  margin: 10px 0;
+  border: 2px solid #2D9CFA;
+  font-size: 16px;
+  outline: none;
+  background: transparent;
+}
+
+/* Estilização do placeholder azul */
+input::placeholder {
+  color: #2D9CFA;
+  opacity: 1;
+}
+
+/* Links */
+.login-links {
+  width: 85%;
+  font-size: 12px;
+  margin: 5px 0px 40px;
+  padding: 0 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.login-links a {
+  text-decoration: none;
+}
+
+/* Botão de entrar */
+.btn-entrar {
+  width: 85%;
+  padding: 16px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background-color: #2D9CFA;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Efeito de hover no botão */
+.btn-entrar:hover {
+  background-color: #1A7DC4;
+}
+
+/****************************
+ESTILOS PÁGINA PASSWORD RESET
+****************************/
+
+/* Reset básico */
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+ */
+/* Estilização do cabeçalho */
+/* .top-bar {
+    background-color: white;
+    color: #2196F3;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    font-size: 18px;
+    border-bottom: 2px solid #2196F3;
+}
+
+.back-icon {
+    font-size: 20px;
+    cursor: pointer;
+    margin-right: 10px;
+} */
+
+/* Estilização do conteúdo principal */
+/* main {
+    width: 90%;
+    margin: 20px auto;
+}
+
+h2 {
+    color: #2196F3;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+ */
+/* Input do email */
+/* form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 2px solid #2196F3;
+    border-radius: 5px;
+    font-size: 16px;
+} */
+
+/* Texto informativo */
+/* .info-text {
+    font-size: 12px;
+    color: #2196F3;
+    margin: 15px 0;
+}
+ */
+/* Botão de envio */
+/* .btn-enviar {
+    width: 100%;
+    padding: 15px;
+    background-color: #2196F3;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+} */
+
+/*************************** 
+ESTILIZAÇÃO DA PÁGINA SIGNUP 
+***************************/
+  
+/* Container principal */
+.container-signUp {
+  border: solid 10px yellow;
+  width: 50%;
+  min-width: 340px;
+  max-width: 500px;
+  height: 100%;
+}
+
+/* Estilização do topo da página */
+.signUp-top-bar {
+  background: #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0 15px 15px;
+  width: 54%;
+}
+
 /* Estilização retorno página anterior */
 /* .fa-arrow-left {
   color: #2D9CFA;
   cursor: pointer;
 } */
-  
-/* <weight>: Use a value from 100 to 900 */
-/* <uniquifier>: Use a unique and descriptive class name */
-/* .montserrat-fonts {
-  font-family: "Montserrat", serif;
-  font-optical-sizing: auto;
-  font-weight: 100;
-  font-style: normal;
-} */
 
-/* a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
+.terms {
+  font-size: 12px;
+  color: #2196F3;
+  margin: 15px 0;
 }
 
-a:hover {
-  color: #535bf2;
+.terms a {
+  color: #2196F3;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn-cadastrar {
+  width: 100%;
+  padding: 15px;
+  background-color: #2196F3;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/****************************** 
+ESTILIZAÇÃO DA PÁGINA VIEW POST 
+******************************/
+
+/* header h1 {
+    font-size: 16px;
 } */
 
+/* Container principal */
+/* .container { */
+    /* padding: 80px 15px 60px; */ /* Espaço para o cabeçalho e rodapé */
+/* } */
+
+/* Post Completo */
+/* .post-completo {
+    background: #E3F2FD;
+    padding: 15px;
+    border-radius: 10px;
+} */
+
+/* .autor {
+    color: #2D9CFA;
+    font-size: 12px;
+    font-weight: bold;
+} */
+
+/* .titulo {
+    color: #2D9CFA;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 5px 0;
+} */
+
+/* .conteudo {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: justify;
+} */
+
+/* Interação */
+/* .interacao {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 14px;
+    margin-top: 15px;
+} */
+
+/* .interacao span {
+    color: #2D9CFA;
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+} */
+
+/* .interacao i {
+    margin-right: 5px;
+} */
+
+
+/* ************************************* */
 /* @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
