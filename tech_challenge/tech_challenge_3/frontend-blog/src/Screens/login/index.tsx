@@ -13,12 +13,12 @@ const Login: React.FC = () => {
             </div>
             <h1 className="subtitulo">Acesse sua conta</h1>
 
-            <form>
+            <form className="login-form">
                 <input type="text" placeholder="Nome completo" required />
                 <input type="email" placeholder="Email" required />
                 <input type="password" placeholder="Senha" required />
                 
-                <div className="links">
+                <div className="login-links">
                     <a href="#">Não tem uma conta?</a>
                     <a href="#">Esqueceu sua senha?</a>
                 </div>
