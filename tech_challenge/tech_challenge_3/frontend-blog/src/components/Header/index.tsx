@@ -1,23 +1,23 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from 'react'
+import './header.css'
 
-const HeaderContainer = styled.header`
-    background-color: #2699FB;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    /* position: fixed; */
-    top: 0;
-    width: 100%;
-    z-index: 1;
-    `;
+// import '@fortawesome/fontawesome-free/css/all.min.css'
+// import '@fortawesome/fontawesome-free/js/all.min.js'
 
-const Header: React.FC = () => {
+interface HeaderProps{
+    pageTitle?: string
+}
+const Header: React.FC<HeaderProps> = ({pageTitle}) => {
     return(
-        <HeaderContainer>
-            <h1>HEADER</h1>
-        </HeaderContainer>
-    );
-};
+        <>
+            <header>
+                <i className="fas fa-bars"></i>
+                <h1>{pageTitle ? pageTitle : 'Título provisório'}</h1>
+                <i className="fas fa-search"></i>
 
-export default Header;
+            </header>
+        </>
+    )
+}
+
+export default Header

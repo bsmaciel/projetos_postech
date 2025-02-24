@@ -1,25 +1,30 @@
 import React from "react"
-// import styled from 'styled-components';
+import './creatPost.css'
 
-/* const CreatePostContainer = styled.main`
-    background-color: #003cff;
-    color: #000000;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    `;
- */
+// import '@fortawesome/fontawesome-free/css/all.min.css'
+// import '@fortawesome/fontawesome-free/js/all.min.js'
+
+import Header from "../../components/Header"
+import Footer from "../../components/Footer"
+
 const CreatePost: React.FC = () => {
     return(
-        // <CreatePostContainer>
-            <>
-                <h1>CreatePost</h1>
-            </>
-        // </CreatePostContainer>
+        <>
+        <Header />
+        <div className="container-createPost">
+            <form className="form-post">
+                <input type="text" placeholder="Digite seu nome" required />
+                <input type="text" placeholder="Digite o título do post" required />
+                <textarea placeholder="Insira o texto" required></textarea>
+                <div className="buttons">
+                    <button type="reset" className="btn limpar">LIMPAR</button>
+                    <button type="submit" className="btn criar">CRIAR</button>
+                </div>
+            </form>
+        </div>
+        <Footer />
+        </>
     )
 }
 
-export default CreatePost;
+export default CreatePost

@@ -1,21 +1,14 @@
 import React from "react"
-import styled from 'styled-components';
+import './mainContent.css'
 
-const MainContentContainer = styled.main`
-    background: #FFFF00;
-    width: 600px;
-    margin: auto;
-    height: 100vh;
-    text-align: center;
-`;
+// import '@fortawesome/fontawesome-free/css/all.min.css'
+// import '@fortawesome/fontawesome-free/js/all.min.js'
 
 const MainContent: React.FC<{ children: React.ReactNode }> = ({ children }) => {
     return(
-        <MainContentContainer>
-            <div>
-                {children}
-            </div>
-        </MainContentContainer>
+        <>
+            {children}
+        </>
     )
 }
 
