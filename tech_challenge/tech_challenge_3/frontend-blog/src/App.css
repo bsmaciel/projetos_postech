@@ -1,24 +1,23 @@
-body {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  margin: 0;
-}
+/* Comanda o id root que está no index.html */
+/* #root { */
+  /* width: 100%; */
+  /* max-width: 800px; */
+  /* margin: 0 auto; */
+  /* padding: 2rem; */
+  /* text-align: center; */
+  /* background-color: #008e09; */
+  /* color: rgba(255, 255, 255, 0.87); */
+  /* display: flex; */
+  /* position: relative; */
+/* } */
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .header, .footer {
     padding: 10px 0;
   }
-}
+} */
 
-/* #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
-
-.logo {
+/* .logo {
   height: 6em;
   padding: 1.5em;
   will-change: filter;
@@ -52,5 +51,4 @@ body {
 
 .read-the-docs {
   color: #888;
-}
- */
+} */
