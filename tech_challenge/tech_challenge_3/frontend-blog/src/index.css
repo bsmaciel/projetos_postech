@@ -18,7 +18,8 @@
 }
 
 :root {
-  background-color: #303030;
+  /* background-color: #303030; */
+  background-color: #ffffff;
   /* border: solid 10px red; */
   min-width: 320px; /* Ok */
   /* width: 100%; */
@@ -406,7 +407,7 @@ ESTILOS PÁGINA LOGIN
   /* border: solid 10px yellow; */
   width: 50%; /* % da div #root */
   min-width: 340px;
-  max-width: 500px;
+  max-width: 800px;
   height: 100%;
   padding: 20px 20px 50px;
 }
@@ -417,7 +418,7 @@ ESTILOS PÁGINA LOGIN
   display: grid;
   grid-template-columns:auto 1fr; 
   align-items: center;
-  padding: 15px 29px 15px 15px;
+  padding: 15px 54px 15px 40px;
   width: 100%;
 }
 
@@ -605,7 +606,7 @@ ESTILIZAÇÃO DA PÁGINA SIGNUP
   display: grid;
   grid-template-columns:auto 1fr; 
   align-items: center;
-  padding: 15px 29px 15px 15px;
+  padding: 15px 54px 15px 40px;
   width: 100%;
 }
 
@@ -624,7 +625,7 @@ ESTILIZAÇÃO DA PÁGINA SIGNUP
 /* Estilização do subtítulo */
 .subtitulo-signUp {
   /* color: #2D9CFA; */
-  font-size: 20px;
+  font-size: 24px;
   font-weight: bold;
   text-align: center;
   padding: 2em 0 2em;
