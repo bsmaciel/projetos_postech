@@ -19,20 +19,20 @@
 
 :root {
   background-color: #303030;
-  border: solid 10px red;
+  /* border: solid 10px red; */
   min-width: 320px; /* Ok */
   /* width: 100%; */
   height: 100%; /* Ok */
 }
 
 body {
-  border: solid 10px blue;
+  /* border: solid 10px blue; */
   min-width: 320px; /* Ok */
   height: 100%; /* Ok */
 }
 
 #root {
-  border: solid 10px green;
+  /* border: solid 10px green; */
   min-width: 320px; /* Ok */
   display: flex;
   justify-content: center;
@@ -403,15 +403,16 @@ ESTILOS PÁGINA LOGIN
   display: flex;
   flex-direction: column;
   background-color: #fffffb;
-  border: solid 10px yellow;
+  /* border: solid 10px yellow; */
   width: 50%; /* % da div #root */
   min-width: 340px;
   max-width: 500px;
   height: 100%;
+  padding: 20px 20px 50px;
 }
 
 /* Estilização do topo da página */
-.login-top-bar {
+.top-bar-login {
   background: #fffffb;
   display: grid;
   grid-template-columns:auto 1fr; 
@@ -422,36 +423,36 @@ ESTILOS PÁGINA LOGIN
 
 /* Estilização retorno página anterior */
 .fa-arrow-left {
-  /* color: #2D9CFA; */
   cursor: pointer;
 }
 
 /* Estilização do título da página */
 .pageTitle {
-  /* color: #2D9CFA; */
   font-size: 14px;
   font-weight: bold;
   justify-self: center;
 }
 
 /* Estilização do subtítulo */
-.subtitulo {
+.subtitulo-login {
   /* color: #2D9CFA; */
-  font-size: 20px;
+  font-size: 24px;
   font-weight: bold;
   text-align: center;
-  padding: 4em 0 4em;
+  padding: 2em 0 2em;
 }
 
-form {
+/* Estilização do form */
+.form-login {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   height: 100%;
 }
 
 /* Estilização dos inputs */
-input {
+.form-login input {
   width: 85%;
   height: 4em;
   padding: 12px 20px;
@@ -468,24 +469,24 @@ input::placeholder {
   opacity: 1;
 }
 
-/* Links */
-.login-links {
+/* Estilização dos links */
+.links-login {
   width: 85%;
   font-size: 12px;
-  margin: 5px 0px 40px;
+  margin: 5px 0px 150px;
   padding: 0 10px;
   display: flex;
   justify-content: space-between;
 }
 
-.login-links a {
+.links-login a {
   text-decoration: none;
 }
 
-/* Botão de entrar */
-.btn-entrar {
+/* Estilização do botão login */
+.btn-login {
   width: 85%;
-  padding: 16px;
+  padding: 20px;
   font-size: 16px;
   font-weight: bold;
   color: white;
@@ -493,10 +494,13 @@ input::placeholder {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+
+  display: flex;
+  justify-content: center;
 }
 
 /* Efeito de hover no botão */
-.btn-entrar:hover {
+.btn-login:hover {
   background-color: #1A7DC4;
 }
 
@@ -584,33 +588,82 @@ ESTILIZAÇÃO DA PÁGINA SIGNUP
   
 /* Container principal */
 .container-signUp {
-  border: solid 10px yellow;
-  width: 50%;
+  display: flex;
+  flex-direction: column;
+  background-color: #fffffb;
+  /* border: solid 10px yellow; */
+  width: 50%; /* % da div #root */
   min-width: 340px;
   max-width: 500px;
   height: 100%;
+  padding: 20px 20px 50px;
 }
 
 /* Estilização do topo da página */
-.signUp-top-bar {
-  background: #eee;
-  display: flex;
-  justify-content: space-between;
+.top-bar-signUp {
+  background: #fffffb;
+  display: grid;
+  grid-template-columns:auto 1fr; 
   align-items: center;
-  padding: 15px 0 15px 15px;
-  width: 54%;
+  padding: 15px 29px 15px 15px;
+  width: 100%;
 }
 
 /* Estilização retorno página anterior */
-/* .fa-arrow-left {
-  color: #2D9CFA;
+.fa-arrow-left {
   cursor: pointer;
-} */
+}
 
+/* Estilização do título da página */
+.pageTitle {
+  font-size: 14px;
+  font-weight: bold;
+  justify-self: center;
+}
+
+/* Estilização do subtítulo */
+.subtitulo-signUp {
+  /* color: #2D9CFA; */
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  padding: 2em 0 2em;
+}
+
+/* Estilização do form */
+.form-signUp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+/* Estilização dos inputs */
+.form-signUp input {
+  width: 85%;
+  height: 4em;
+  padding: 12px 20px;
+  margin: 10px 0;
+  border: 2px solid #2D9CFA;
+  font-size: 16px;
+  outline: none;
+  background: transparent;
+}
+
+/* Estilização do placeholder azul */
+input::placeholder {
+  color: #2D9CFA;
+  opacity: 1;
+}
+
+/* Estilização dos termos */
 .terms {
+  width: 75%;
   font-size: 12px;
-  color: #2196F3;
-  margin: 15px 0;
+  margin: 5px 0px 60px;
+  padding: 0 10px;
+  text-align: center;
 }
 
 .terms a {
@@ -619,16 +672,25 @@ ESTILIZAÇÃO DA PÁGINA SIGNUP
   font-weight: bold;
 }
 
-.btn-cadastrar {
-  width: 100%;
-  padding: 15px;
-  background-color: #2196F3;
-  color: white;
+/* Estilização do botão signUp */
+.btn-signUp {
+  width: 85%;
+  padding: 20px;
   font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background-color: #2D9CFA;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  margin-top: 10px;
+
+  display: flex;
+  justify-content: center;
+}
+
+/* Efeito de hover no botão */
+.btn-login:hover {
+  background-color: #1A7DC4;
 }
 
 /****************************** 
