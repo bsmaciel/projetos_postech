@@ -1,4 +1,5 @@
 import React from 'react'
+import TopBar from '../../components/TopBar'
 import './login.css'
 
 import '@fortawesome/fontawesome-free/css/all.min.css'
@@ -7,11 +8,8 @@ import '@fortawesome/fontawesome-free/js/all.min.js'
 const Login: React.FC = () => {
     return(
         <div className="container-login">
-            <div className="top-bar-login">
-                <i className="fas fa-arrow-left"></i>
-                <h2 className="pageTitle">LOGIN</h2>
-            </div>
-            <h1 className="subtitulo-login">Acesse sua conta</h1>
+            <TopBar pageTitle='LOGIN'/>
+            <h2 className="subtitulo-login">Acesse sua conta</h2>
 
             <form className="form-login">
                 <input type="text" placeholder="Nome completo" required />

@@ -1,4 +1,5 @@
 import React from 'react'
+import TopBar from '../../components/TopBar'
 import './signUp.css'
 
 import '@fortawesome/fontawesome-free/css/all.min.css'
@@ -7,11 +8,8 @@ import '@fortawesome/fontawesome-free/js/all.min.js'
 const SignUp: React.FC = () => {
     return(
         <div className="container-signUp">
-            <div className="top-bar-signUp">
-                <i className="fas fa-arrow-left"></i>
-                <h2 className="pageTitle">CADASTRO</h2>
-            </div>
-            <h1 className="subtitulo-signUp">Crie sua conta</h1>
+            <TopBar pageTitle='CADASTRO' />
+            <h2 className="subtitulo-signUp">Crie sua conta</h2>
 
             <form className="form-signUp" action="#" method="POST">
                 <input type="text" placeholder="Nome completo" required />
