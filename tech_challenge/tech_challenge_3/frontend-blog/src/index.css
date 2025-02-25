@@ -41,6 +41,12 @@ body {
   height: 100%;
 }
 
+/* Estilização do placeholder azul */
+input::placeholder {
+  color: #2D9CFA;
+  opacity: 1;
+}
+
 .container-adminPost {
   border: solid 10px yellow;
   width: 50%;
@@ -57,11 +63,6 @@ body {
 }
 
 .container-listPost {
-  border: solid 10px yellow;
-  width: 50%;
-}
-
-.container-passwordReset {
   border: solid 10px yellow;
   width: 50%;
 }
@@ -412,28 +413,6 @@ ESTILOS PÁGINA LOGIN
   padding: 20px 20px 50px;
 }
 
-/* Estilização do topo da página */
-.top-bar-login {
-  background: #fffffb;
-  display: grid;
-  grid-template-columns:auto 1fr; 
-  align-items: center;
-  padding: 15px 54px 15px 40px;
-  width: 100%;
-}
-
-/* Estilização retorno página anterior */
-.fa-arrow-left {
-  cursor: pointer;
-}
-
-/* Estilização do título da página */
-.pageTitle {
-  font-size: 14px;
-  font-weight: bold;
-  justify-self: center;
-}
-
 /* Estilização do subtítulo */
 .subtitulo-login {
   /* color: #2D9CFA; */
@@ -462,12 +441,6 @@ ESTILOS PÁGINA LOGIN
   font-size: 16px;
   outline: none;
   background: transparent;
-}
-
-/* Estilização do placeholder azul */
-input::placeholder {
-  color: #2D9CFA;
-  opacity: 1;
 }
 
 /* Estilização dos links */
@@ -509,51 +482,80 @@ input::placeholder {
 ESTILOS PÁGINA PASSWORD RESET
 ****************************/
 
-/* Reset básico */
-/* * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-    text-align: center;
-}
- */
-/* Estilização do cabeçalho */
-/* .top-bar {
-    background-color: white;
-    color: #2196F3;
-    display: flex;
-    align-items: center;
-    padding: 15px;
-    font-size: 18px;
-    border-bottom: 2px solid #2196F3;
+/* Container principal */
+.container-passwordReset {
+  display: flex;
+  flex-direction: column;
+  background-color: #fffffb;
+  /* border: solid 10px yellow; */
+  width: 50%; /* % da div #root */
+  min-width: 340px;
+  max-width: 800px;
+  height: 100%;
+  padding: 20px 20px 50px;
 }
 
-.back-icon {
-    font-size: 20px;
-    cursor: pointer;
-    margin-right: 10px;
-} */
-
-/* Estilização do conteúdo principal */
-/* main {
-    width: 90%;
-    margin: 20px auto;
+/* Estilização do subtítulo */
+.subtitulo-passwordReset {
+  /* color: #2D9CFA; */
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  padding: 2em 0 2em;
 }
 
-h2 {
-    color: #2196F3;
-    font-size: 22px;
-    margin-bottom: 20px;
-}
- */
-/* Input do email */
-/* form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+/* Estilização do form */
+.form-passwordReset {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
 }
 
+/* Estilização dos inputs */
+.form-passwordReset input {
+  width: 85%;
+  height: 4em;
+  padding: 12px 20px;
+  /* margin: 10px 0; */
+  border: 2px solid #2D9CFA;
+  font-size: 16px;
+  outline: none;
+  background: transparent;
+}
+
+/* Estilização dos termos */
+.info-text {
+  width: 75%;
+  font-size: 12px;
+  /* margin: 5px 0px 60px; */
+  padding: 0 10px;
+  text-align: center;
+}
+
+/* Estilização do botão enviar */
+.btn-enviar {
+  width: 85%;
+  padding: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background-color: #2D9CFA;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+}
+
+/* Efeito de hover no botão */
+.btn-enviar:hover {
+  background-color: #1A7DC4;
+}
+
+/*
 input {
     width: 100%;
     padding: 12px;
@@ -595,31 +597,9 @@ ESTILIZAÇÃO DA PÁGINA SIGNUP
   /* border: solid 10px yellow; */
   width: 50%; /* % da div #root */
   min-width: 340px;
-  max-width: 500px;
+  max-width: 800px;
   height: 100%;
   padding: 20px 20px 50px;
-}
-
-/* Estilização do topo da página */
-.top-bar-signUp {
-  background: #fffffb;
-  display: grid;
-  grid-template-columns:auto 1fr; 
-  align-items: center;
-  padding: 15px 54px 15px 40px;
-  width: 100%;
-}
-
-/* Estilização retorno página anterior */
-.fa-arrow-left {
-  cursor: pointer;
-}
-
-/* Estilização do título da página */
-.pageTitle {
-  font-size: 14px;
-  font-weight: bold;
-  justify-self: center;
 }
 
 /* Estilização do subtítulo */
@@ -650,12 +630,6 @@ ESTILIZAÇÃO DA PÁGINA SIGNUP
   font-size: 16px;
   outline: none;
   background: transparent;
-}
-
-/* Estilização do placeholder azul */
-input::placeholder {
-  color: #2D9CFA;
-  opacity: 1;
 }
 
 /* Estilização dos termos */

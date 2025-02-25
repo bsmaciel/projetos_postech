@@ -1,8 +1,8 @@
 import React from 'react'
 import './header.css'
 
-// import '@fortawesome/fontawesome-free/css/all.min.css'
-// import '@fortawesome/fontawesome-free/js/all.min.js'
+import '@fortawesome/fontawesome-free/css/all.min.css'
+import '@fortawesome/fontawesome-free/js/all.min.js'
 
 interface HeaderProps{
     pageTitle?: string
