@@ -1,39 +1,22 @@
-/* Cabeçalho */ /* OK */
-/* header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px;
-    background: #2D9CFA;
-    color: white;
-} */
-
-/* header h1 {
-    font-size: 2em;
-} */
-
-/* Container principal */
-/* .container-header {
-    padding: 15px;
-} */
 
 /* Estilização do cabeçalho */
-/* .top-bar {
+header {
     background-color: #2196F3;
-    color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px;
     font-size: 18px;
-} */
+    width: 100%;
+}
 
-/* .menu-icon, .search-icon {
+header h1 {
+    color: white;
+    font-size: 20px;
+}
+
+.fa-bars {
     font-size: 20px;
     cursor: pointer;
-} */
-
-header i {
-    margin-right: 10px;
-    cursor: pointer;
+    color: white;
 }

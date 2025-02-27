@@ -14,7 +14,6 @@ const Header: React.FC<HeaderProps> = ({pageTitle}) => {
                 <i className="fas fa-bars"></i>
                 <h1>{pageTitle ? pageTitle : 'Título provisório'}</h1>
                 <i className="fas fa-search"></i>
-
             </header>
         </>
     )
