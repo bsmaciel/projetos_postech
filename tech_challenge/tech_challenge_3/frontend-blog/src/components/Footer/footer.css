@@ -1,37 +1,25 @@
-/* Reset padrão */
-/* * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-} */
+/* Estilização do rodapé */
+footer {
+    background: #2196F3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
 
-/* Rodapé */
-/* footer { */
-    /* background: #2D9CFA; */
-    /* color: white; */
-    /* display: flex; */
-    /* justify-content: center; */
-    /* align-items: center; */
-    /* padding: 15px; */
-    /* position: fixed; */
-    /* bottom: 0; */
-    /* width: 100%; */
-/* } */
+footer span {
+    color: white;
+}
 
 /* footer i {
-    margin-right: 10px;
+    color: white;
     cursor: pointer;
 } */
 
-/* Rodapé */
-/* .bottom-bar { */
-    /* background-color: #2196F3; */
-    /* color: white; */
-    /* text-align: center; */
-    /* padding: 15px; */
-    /* font-size: 18px; */
-    /* display: flex; */
-    /* justify-content: center; */
-    /* align-items: center; */
-/* } */
+.fas fa-arrow-left back-icon {
+    color: white;
+    cursor: pointer;
+}
