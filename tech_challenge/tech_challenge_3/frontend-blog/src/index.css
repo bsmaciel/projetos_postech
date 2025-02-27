@@ -18,8 +18,8 @@
 }
 
 :root {
-  /* background-color: #303030; */
   background-color: #ffffff;
+  /* background-color: #303030; */
   /* border: solid 10px red; */
   min-width: 320px; /* Ok */
   /* width: 100%; */
@@ -36,7 +36,9 @@ body {
   /* border: solid 10px green; */
   min-width: 320px; /* Ok */
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items:center;
   width: 100%; /* % de body */
   height: 100%;
 }
@@ -75,8 +77,20 @@ input::placeholder {
 ESTILIZAÇÃO PÁGINA ADMIN POST
 ****************************/
 
+/* Container principal */
+.container-adminPost {
+  display: flex;
+  flex-direction: column;
+  /* background-color: #fffffb; */
+  /* border: solid 10px yellow; */
+  width: 50%; /* % da div #root */
+  min-width: 340px;
+  max-width: 800px;
+  height: 100%;
+  padding: 20px 20px 50px;
+}
 /* Tabela */
-/* .table-container {
+.table-container {
     width: 90%;
     margin: 20px auto;
     overflow-x: auto;
@@ -107,10 +121,10 @@ th {
 .delete {
     color: red;
     text-decoration: none;
-} */
+}
 
 /* Campos de Entrada */
-/* .form-container {
+.form-container {
     width: 90%;
     margin: 20px auto;
 }
@@ -120,17 +134,16 @@ th {
     padding: 10px;
     margin: 10px 0;
     border: 1px solid #2196F3;
-    border-radius: 5px;
     font-size: 16px;
 }
 
 .text-area {
     height: 150px;
     resize: none;
-} */
+}
 
 /* Botões */
-/* .buttons {
+.buttons {
     display: flex;
     justify-content: space-between;
 }
@@ -139,7 +152,6 @@ th {
     width: 45%;
     padding: 10px;
     border: 2px solid #2196F3;
-    border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
 }
@@ -152,7 +164,7 @@ th {
 .save-btn {
     background-color: #2196F3;
     color: white;
-} */
+}
 
 /*****************************
 ESTILIZAÇÃO PÁGINA CREATE POST
