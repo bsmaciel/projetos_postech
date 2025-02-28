@@ -59,10 +59,10 @@ input::placeholder {
   width: 50%;
 }
 
-.container-editPost {
+/* .container-editPost {
   border: solid 10px yellow;
   width: 50%;
-}
+} */
 
 .container-listPost {
   border: solid 10px yellow;
@@ -170,23 +170,31 @@ th {
 ESTILIZAÇÃO PÁGINA CREATE POST
 *****************************/
 
-/* Container */
-/* .container { */
-    /* padding: 80px 20px 60px; */ /* Espaço para cabeçalho e rodapé */
-/* } */
+/* Container principal */
+.container-createPost {
+  display: flex;
+  flex-direction: column;
+  /* background-color: #fffffb; */
+  /* border: solid 10px yellow; */
+  width: 50%; /* % da div #root */
+  min-width: 340px;
+  max-width: 800px;
+  height: 100%;
+  padding: 20px 20px 50px;
+}
 
-/* Formulário */
-/* .form-post {
+/* Estilização do formulário */
+.form-post {
     display: flex;
     flex-direction: column;
     gap: 15px;
-} */
+}
 
-/* input, textarea {
+/* Estilização do input */
+input, textarea {
     width: 100%;
     padding: 12px;
     border: 2px solid #2D9CFA;
-    border-radius: 5px;
     font-size: 14px;
     outline: none;
 }
@@ -196,13 +204,14 @@ textarea::placeholder {
     color: #2D9CFA;
 }
 
+/* Estilização do textarea */
 textarea {
     height: 150px;
     resize: none;
-} */
+}
 
-/* Botões */
-/* .buttons {
+/* Estilização dos botões */
+.buttons {
     display: flex;
     justify-content: space-between;
     margin-top: 10px;
@@ -213,7 +222,6 @@ textarea {
     padding: 12px;
     font-size: 14px;
     font-weight: bold;
-    border-radius: 5px;
     cursor: pointer;
 }
 
@@ -227,17 +235,29 @@ textarea {
     background: #2D9CFA;
     border: none;
     color: white;
-} */
+}
 
 /***********************
 ESTILOS PÁGINA EDIT POST
 ***********************/
 
-/* Tabela */
-/* .table-container {
+/* Container principal */
+.container-editPost {
+  display: flex;
+  flex-direction: column;
+  /* background-color: #fffffb; */
+  border: solid 10px yellow;
+  width: 50%; /* % da div #root */
+  min-width: 340px;
+  max-width: 800px;
+  height: 100%;
+  padding: 20px 20px 50px;
+}
+
+/* Estilização da tabela */
+.table-container {
     overflow-x: auto;
     border: 2px solid #2D9CFA;
-    border-radius: 5px;
 }
 
 table {
@@ -265,9 +285,9 @@ td a {
 td a:hover {
     text-decoration: underline;
 }
- */
-/* Formulário */
-/* .form-editar {
+
+/* Estilização do formulário */
+.form-editar {
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -278,7 +298,6 @@ input, textarea {
     width: 100%;
     padding: 12px;
     border: 2px solid #2D9CFA;
-    border-radius: 5px;
     font-size: 14px;
     outline: none;
 }
@@ -292,9 +311,9 @@ textarea {
     height: 150px;
     resize: none;
 }
- */
-/* Botões */
-/* .buttons {
+
+/* Estilizção dos botões */
+.buttons {
     display: flex;
     justify-content: space-between;
     margin-top: 10px;
@@ -305,7 +324,6 @@ textarea {
     padding: 12px;
     font-size: 14px;
     font-weight: bold;
-    border-radius: 5px;
     cursor: pointer;
 }
 
@@ -319,19 +337,27 @@ textarea {
     background: #2D9CFA;
     border: none;
     color: white;
-} */
+}
 
 /***********************
 ESTILOS PÁGINA LIST POST
 ***********************/
 
 /* Container principal */
-/* .container {
-    padding: 15px;
-} */
+.container-listPost {
+  display: flex;
+  flex-direction: column;
+  /* background-color: #fffffb; */
+  border: solid 10px yellow;
+  width: 50%; /* % da div #root */
+  min-width: 340px;
+  max-width: 800px;
+  height: 100%;
+  padding: 20px 20px 50px;
+}
 
-/* Post */
-/* .post {
+/* Estilizar post */
+.post {
     background: #E3F2FD;
     padding: 15px;
     border-radius: 10px;
@@ -355,10 +381,10 @@ ESTILOS PÁGINA LIST POST
     font-size: 14px;
     color: #333;
     margin-bottom: 10px;
-} */
+}
 
-/* Interação */
-/* .interacao {
+/* Estilizar interação */
+.interacao {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -373,17 +399,17 @@ ESTILOS PÁGINA LIST POST
 
 .interacao i {
     margin-right: 5px;
-} */
+}
 
-/* Botão "+" */
-/* .mais {
+/* Estilizar botão "+" */
+.mais {
     color: #2D9CFA;
     font-size: 20px;
     text-decoration: none;
-} */
+}
 
-/* Paginação */
-/* .paginacao {
+/* Estilizar paginação */
+.paginacao {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -406,7 +432,7 @@ ESTILOS PÁGINA LIST POST
 
 .paginacao .desabilitado {
     opacity: 0.5;
-} */
+}
 
 /*******************
 ESTILOS PÁGINA LOGIN
@@ -567,36 +593,6 @@ ESTILOS PÁGINA PASSWORD RESET
   background-color: #1A7DC4;
 }
 
-/*
-input {
-    width: 100%;
-    padding: 12px;
-    margin: 10px 0;
-    border: 2px solid #2196F3;
-    border-radius: 5px;
-    font-size: 16px;
-} */
-
-/* Texto informativo */
-/* .info-text {
-    font-size: 12px;
-    color: #2196F3;
-    margin: 15px 0;
-}
- */
-/* Botão de envio */
-/* .btn-enviar {
-    width: 100%;
-    padding: 15px;
-    background-color: #2196F3;
-    color: white;
-    font-size: 16px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 10px;
-} */
-
 /*************************** 
 ESTILIZAÇÃO DA PÁGINA SIGNUP 
 ***************************/
@@ -684,61 +680,65 @@ ESTILIZAÇÃO DA PÁGINA SIGNUP
 ESTILIZAÇÃO DA PÁGINA VIEW POST 
 ******************************/
 
-/* header h1 {
-    font-size: 16px;
-} */
-
 /* Container principal */
-/* .container { */
-    /* padding: 80px 15px 60px; */ /* Espaço para o cabeçalho e rodapé */
-/* } */
+.container-viewPost {
+  display: flex;
+  flex-direction: column;
+  /* background-color: #fffffb; */
+  border: solid 10px yellow;
+  width: 50%; /* % da div #root */
+  min-width: 340px;
+  max-width: 800px;
+  height: 100%;
+  padding: 20px 20px 50px;
+}
 
-/* Post Completo */
-/* .post-completo {
+/* Estilização do post */
+.post-completo {
     background: #E3F2FD;
     padding: 15px;
     border-radius: 10px;
-} */
+}
 
-/* .autor {
+.autor {
     color: #2D9CFA;
     font-size: 12px;
     font-weight: bold;
-} */
+}
 
-/* .titulo {
+.titulo {
     color: #2D9CFA;
     font-size: 18px;
     font-weight: bold;
     margin: 5px 0;
-} */
+}
 
-/* .conteudo {
+.conteudo {
     font-size: 14px;
-    color: #333;
+    color: #2D9CFA;
     margin-bottom: 10px;
     text-align: justify;
-} */
+}
 
-/* Interação */
-/* .interacao {
+/* Estilização da interação */
+.interacao {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     font-size: 14px;
     margin-top: 15px;
-} */
+}
 
-/* .interacao span {
+.interacao span {
     color: #2D9CFA;
     display: flex;
     align-items: center;
     margin-right: 15px;
-} */
+}
 
-/* .interacao i {
+.interacao i {
     margin-right: 5px;
-} */
+}
 
 
 /* ************************************* */

@@ -1,8 +1,8 @@
 import React from "react"
 import './creatPost.css'
 
-// import '@fortawesome/fontawesome-free/css/all.min.css'
-// import '@fortawesome/fontawesome-free/js/all.min.js'
+import '@fortawesome/fontawesome-free/css/all.min.css'
+import '@fortawesome/fontawesome-free/js/all.min.js'
 
 import Header from "../../components/Header"
 import Footer from "../../components/Footer"
@@ -10,7 +10,7 @@ import Footer from "../../components/Footer"
 const CreatePost: React.FC = () => {
     return(
         <>
-        <Header />
+        <Header pageTitle='CRIAR POST' />
         <div className="container-createPost">
             <form className="form-post">
                 <input type="text" placeholder="Digite seu nome" required />
