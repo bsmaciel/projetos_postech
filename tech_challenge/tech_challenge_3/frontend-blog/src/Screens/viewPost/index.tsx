@@ -10,7 +10,7 @@ import Footer from "../../components/Footer"
 const ViewPost: React.FC = () => {
     return(
         <>
-        <Header />
+        <Header pageTitle='POST' />
         <div className="container-viewPost">
             <div>
                 <div className="post-container">

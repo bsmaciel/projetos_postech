@@ -11,7 +11,7 @@ import Footer from "../../components/Footer"
 const AdminPost: React.FC = () => {
     return(
         <>
-            <Header />
+            <Header pageTitle='ADMIN POST'/>
             <div className="container-adminPost">
                     <section className="table-container">
                         <table>

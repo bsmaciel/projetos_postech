@@ -10,7 +10,7 @@ import Footer from "../../components/Footer"
 const ListPost: React.FC = () => {
     return(
         <>
-        <Header />
+        <Header pageTitle='LISTA' />
         <div className="container-listPost">
             <div className="post">
                 <p className="autor">AUTOR</p>
