@@ -8,6 +8,7 @@ import EditPost from './Screens/editPost'
 import LandingPage from './Screens/landingPage'
 import ListPost from './Screens/listPost'
 import Login from './Screens/login'
+import Menu from './Screens/menu/index '
 import PasswordReset from './Screens/passwordReset'
 import SignUp from './Screens/signUp'
 import ViewPost from './Screens/viewPost'
@@ -31,6 +32,7 @@ function App() {
             <Route path="/landingPage" element={<LandingPage />} />
             <Route path="/listPost" element={<ListPost />} />
             <Route path="/" element={<Login />} />
+            <Route path="/menu" element={<Menu />} />
             <Route path="/passwordReset" element={<PasswordReset />} />
             <Route path="/signUp" element={<SignUp />} />
             <Route path="/viewpost" element={<ViewPost />} />

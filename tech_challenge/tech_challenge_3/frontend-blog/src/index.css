@@ -42,11 +42,12 @@ body {
   height: 100%;
 }
 
-/* Placeholder azul */
-/* input::placeholder {
+/* Placeholder */
+input::placeholder, textarea::placeholder {
   color: #2D9CFA;
   opacity: 1;
-} */
+  font-size: 18px;
+}
 
 /****************************
 ESTILIZAÇÃO PÁGINA ADMIN POST
@@ -114,11 +115,9 @@ th {
 /* Input */
 .form-adminPost input {
     width: 85%;
-    padding: 12px;
-    margin: 10px 0;
+    padding: 15px 20px;
     border: 2px solid #2D9CFA;
-    font-size: 14px;
-    padding: 12px 20px;
+    font-size: 18px;
 }
 
 /* Textarea */
@@ -160,13 +159,13 @@ ESTILIZAÇÃO PÁGINA CREATE POST
 
 /* Main container */
 .container-createPost {
-  display: flex;
-  flex-direction: column;
-  border: solid 10px yellow;
-  width: 50%;
-  min-width: 340px;
-  max-width: 800px;
-  height: 100%;
+    display: flex;
+    flex-direction: column;
+    border: solid 10px yellow;
+    width: 50%;
+    min-width: 340px;
+    max-width: 800px;
+    height: 100%;
 }
 
 /* Form */
@@ -182,25 +181,24 @@ ESTILIZAÇÃO PÁGINA CREATE POST
 /* Input */
 .form-createPost input {
     width: 85%;
-    padding: 12px;
+    padding: 15px 20px;
     border: 2px solid #2D9CFA;
-    font-size: 14px;
-    padding: 12px 20px;
+    font-size: 18px;
 }
 
 /* Textarea */
 .form-createPost textarea {
-  width: 85%;
-  padding: 12px;
-  border: 2px solid #2D9CFA;
-  font-size: 14px;
-  min-height: 200px;
-  resize:vertical;
+    width: 85%;
+    padding: 12px;
+    border: 2px solid #2D9CFA;
+    font-size: 14px;
+    min-height: 200px;
+    resize:vertical;
 }
 
-input::placeholder, textarea::placeholder {
+/* input::placeholder, textarea::placeholder {
     color: #2D9CFA;
-}
+} */
 
 /* Button */
 .buttons {
@@ -252,6 +250,7 @@ ESTILOS PÁGINA EDIT POST
     min-height: 200px;
     width: 85%;
     margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 table {
@@ -285,7 +284,7 @@ td a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: 40px;
     height: 100%;
     margin-top: 20px;
     width: 100%;
@@ -294,10 +293,9 @@ td a:hover {
 /* Input */
 .form-editPost input {
   width: 85%;
-  padding: 12px;
+  padding: 15px 20px;
   border: 2px solid #2D9CFA;
-  font-size: 14px;
-  outline: none;
+  font-size: 18px;
 }
 
 /* Textarea */
@@ -311,10 +309,10 @@ td a:hover {
     min-height: 200px;
 }
 
-input::placeholder,
+/* input::placeholder,
 textarea::placeholder {
     color: #2D9CFA;
-}
+} */
 
 /* Button */
 .buttons {
@@ -480,25 +478,22 @@ ESTILOS PÁGINA LOGIN
   align-items: center;
   justify-content: space-between;
   height: 100%;
+  gap: 20px;
 }
 
 /* Inputs */
 .form-login input {
-  width: 85%;
-  height: 4em;
-  padding: 12px 20px;
-  margin: 10px 0;
-  border: 2px solid #2D9CFA;
-  font-size: 16px;
-  outline: none;
-  background: transparent;
+    width: 85%;
+    padding: 15px 20px;
+    border: 2px solid #2D9CFA;
+    font-size: 18px;
 }
 
 /* Links */
 .links-login {
   width: 85%;
   font-size: 12px;
-  margin: 5px 0px 150px;
+  margin: 5px;
   padding: 0 10px;
   display: flex;
   justify-content: space-between;
@@ -512,6 +507,7 @@ ESTILOS PÁGINA LOGIN
 .btn-login {
   width: 85%;
   padding: 20px;
+  margin-top: 150px;
   font-size: 16px;
   font-weight: bold;
   color: white;
@@ -561,18 +557,15 @@ ESTILOS PÁGINA PASSWORD RESET
   align-items: center;
   justify-content: space-between;
   height: 100%;
+  gap: 20px;
 }
 
 /* Inputs */
 .form-passwordReset input {
-  width: 85%;
-  height: 4em;
-  padding: 12px 20px;
-  /* margin: 10px 0; */
-  border: 2px solid #2D9CFA;
-  font-size: 16px;
-  outline: none;
-  background: transparent;
+    width: 85%;
+    padding: 15px 20px;
+    border: 2px solid #2D9CFA;
+    font-size: 18px;
 }
 
 /* Feedback message */
@@ -588,6 +581,7 @@ ESTILOS PÁGINA PASSWORD RESET
 .btn-enviar {
   width: 85%;
   padding: 20px;
+  margin-top: 4em;
   font-size: 16px;
   font-weight: bold;
   color: white;
@@ -614,11 +608,11 @@ ESTILIZAÇÃO DA PÁGINA SIGNUP
   display: flex;
   flex-direction: column;
   border: solid 10px yellow;
-  width: 50%; /* % da div #root */
+  width: 50%;
   min-width: 340px;
   max-width: 800px;
   padding: 20px 20px 50px;
-  height: 100vmax;
+  height: 100%;
 }
 
 /* Subtitle */
@@ -635,27 +629,24 @@ ESTILIZAÇÃO DA PÁGINA SIGNUP
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   height: 100%;
+  gap: 20px;
 }
 
 /* Inputs */
 .form-signUp input {
-  width: 85%;
-  height: 4em;
-  padding: 12px 20px;
-  margin: 10px 0;
-  border: 2px solid #2D9CFA;
-  font-size: 16px;
-  outline: none;
-  background: transparent;
+    width: 85%;
+    padding: 15px 20px;
+    border: 2px solid #2D9CFA;
+    font-size: 18px;
 }
 
 /* Terms of use */
 .terms {
   width: 75%;
   font-size: 12px;
-  margin: 5px 0px 60px;
+  margin: 5px;
   padding: 0 10px;
   text-align: center;
 }
@@ -666,23 +657,23 @@ ESTILIZAÇÃO DA PÁGINA SIGNUP
   font-weight: bold;
 }
 
-/* Botão signUp */
+/* Button */
 .btn-signUp {
   width: 85%;
   padding: 20px;
+  margin-top: 150px;
   font-size: 16px;
   font-weight: bold;
   color: white;
   background-color: #2D9CFA;
   border: none;
-  border-radius: 5px;
   cursor: pointer;
 
   display: flex;
   justify-content: center;
 }
 
-/* Efeito de hover no botão */
+/* Mouse hover */
 .btn-login:hover {
   background-color: #1A7DC4;
 }
@@ -691,7 +682,7 @@ ESTILIZAÇÃO DA PÁGINA SIGNUP
 ESTILIZAÇÃO DA PÁGINA VIEW POST 
 ******************************/
 
-/* Container principal */
+/* Main container */
 .container-viewPost {
   display: flex;
   flex-direction: column;
@@ -751,6 +742,81 @@ ESTILIZAÇÃO DA PÁGINA VIEW POST
     margin-right: 5px;
 } */
 
+
+/****************************** 
+ESTILIZAÇÃO DA PÁGINA MENU 
+******************************/
+
+/* Main container */
+.container-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #2196F3;
+  border: solid 10px yellow;
+  width: 50%; /* % da div #root */
+  min-width: 340px;
+  max-width: 800px;
+  padding: 20px 20px 50px;
+  height: 100%;
+}
+
+/* Subtitle */
+.subtitulo-menu {
+  color: #ffffff;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  padding: 1em 0 0.2em;
+}
+
+h3 {
+  color:#ffffff;
+  font-size: 14px;
+  font-weight: normal;
+  margin-bottom: 6em;
+}
+
+/* List */
+ul {
+  width: 85%;
+  font-size: 12px;
+  font-weight: normal;
+  letter-spacing: 0.1em;
+  list-style-type: none;
+  margin: 5px 0px 150px;
+  padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+ul li a {
+  color:#ffffff;
+  text-decoration: none;
+  font-size: 1.5em;
+}
+
+/* Button */
+.btn-logout {
+  width: 85%;
+  padding: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border: solid 2px white;
+
+  display: flex;
+  justify-content: center;
+}
+
+/* Mouse hover */
+.btn-logout:hover {
+  background-color: #1A7DC4;
+}
 
 /* ************************************* */
 /* @media (prefers-color-scheme: light) {
