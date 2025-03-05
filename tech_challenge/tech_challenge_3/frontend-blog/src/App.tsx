@@ -8,7 +8,7 @@ import EditPost from './Screens/editPost'
 import LandingPage from './Screens/landingPage'
 import ListPost from './Screens/listPost'
 import Login from './Screens/login'
-import Menu from './Screens/menu/index '
+import Menu from './Screens/menu'
 import PasswordReset from './Screens/passwordReset'
 import SignUp from './Screens/signUp'
 import ViewPost from './Screens/viewPost'
@@ -16,6 +16,8 @@ import ViewPost from './Screens/viewPost'
 import './App.css'
 
 import SignUpMessage from './components/SignUpMessage'
+import PasswordResetMessage from './components/PasswordResetMessage'
+import AdminPostsAlert from './components/AdminPostsAlert'
 
 // import '@fortawesome/fontawesome-free/css/all.min.css'
 // import '@fortawesome/fontawesome-free/js/all.min.js'
@@ -29,6 +31,7 @@ function App() {
         <MainContent>
           <Routes>
             <Route path="/adminPost" element={<AdminPost />} />
+            <Route path="/adminPostsAlert" element={<AdminPostsAlert />} />
             <Route path="/createPost" element={<CreatePost />} />
             <Route path="/editPost" element={<EditPost />} />
             <Route path="/landingPage" element={<LandingPage />} />
@@ -36,6 +39,7 @@ function App() {
             <Route path="/" element={<Login />} />
             <Route path="/menu" element={<Menu />} />
             <Route path="/passwordReset" element={<PasswordReset />} />
+            <Route path="/passwordResetMessage" element={<PasswordResetMessage />} />
             <Route path="/signUp" element={<SignUp />} />
             <Route path="/signUpMessage" element={<SignUpMessage />} />
             <Route path="/viewpost" element={<ViewPost />} />
