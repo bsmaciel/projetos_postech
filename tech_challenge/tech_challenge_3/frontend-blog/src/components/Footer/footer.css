@@ -3,10 +3,7 @@ footer {
     background: #2196F3;
     display: flex;
     justify-content: center;
-    align-items: center;
     padding: 15px;
-    position: fixed;
-    bottom: 0;
     width: 100%;
 }
 
@@ -14,12 +11,11 @@ footer span {
     color: white;
 }
 
-/* footer i {
+footer i {
+    cursor: pointer;
+}
+
+/* .fas fa-arrow-left back-icon {
     color: white;
     cursor: pointer;
 } */
-
-.fas fa-arrow-left back-icon {
-    color: white;
-    cursor: pointer;
-}
