@@ -10,9 +10,9 @@ import Footer from "../../components/Footer"
 const CreatePost: React.FC = () => {
     return(
         <>
-        <Header pageTitle='CRIAR POST' />
         <div className="container-createPost">
-            <form className="form-post">
+        <Header pageTitle='CRIAR POST' />
+            <form className="form-createPost">
                 <input type="text" placeholder="Digite seu nome" required />
                 <input type="text" placeholder="Digite o título do post" required />
                 <textarea placeholder="Insira o texto" required></textarea>
@@ -21,8 +21,8 @@ const CreatePost: React.FC = () => {
                     <button type="submit" className="btn criar">CRIAR</button>
                 </div>
             </form>
+            <Footer />
         </div>
-        <Footer />
         </>
     )
 }
