@@ -15,6 +15,8 @@ import ViewPost from './Screens/viewPost'
 
 import './App.css'
 
+import SignUpMessage from './components/SignUpMessage'
+
 // import '@fortawesome/fontawesome-free/css/all.min.css'
 // import '@fortawesome/fontawesome-free/js/all.min.js'
 
@@ -35,6 +37,7 @@ function App() {
             <Route path="/menu" element={<Menu />} />
             <Route path="/passwordReset" element={<PasswordReset />} />
             <Route path="/signUp" element={<SignUp />} />
+            <Route path="/signUpMessage" element={<SignUpMessage />} />
             <Route path="/viewpost" element={<ViewPost />} />
           </Routes>
         </MainContent>

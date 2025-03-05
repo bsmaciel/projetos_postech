@@ -442,8 +442,8 @@ ESTILOS PÁGINA LIST POST
 }
 
 .paginacao .desabilitado {
-    border-right: solid 2px white;
-    color: #90cbff;
+  border-right: solid 2px white;
+  color: #90cbff;
 }
 
 /*******************
@@ -514,13 +514,88 @@ ESTILOS PÁGINA LOGIN
   background-color: #2D9CFA;
   border: none;
   cursor: pointer;
-
+  
   display: flex;
   justify-content: center;
 }
 
 /* Mouse hover */
 .btn-login:hover {
+  background-color: #1A7DC4;
+}
+
+/****************************** 
+ESTILIZAÇÃO DA PÁGINA MENU 
+******************************/
+
+/* Main container */
+.container-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #2196F3;
+  border: solid 10px yellow;
+  width: 50%; /* % da div #root */
+  min-width: 340px;
+  max-width: 800px;
+  padding: 20px 20px 50px;
+  height: 100%;
+}
+
+/* Subtitle */
+.subtitulo-menu {
+  color: #ffffff;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  padding: 1em 0 0.2em;
+}
+
+h3 {
+  color:#ffffff;
+  font-size: 14px;
+  font-weight: normal;
+  margin-bottom: 6em;
+}
+
+/* List */
+ul {
+  width: 85%;
+  font-size: 12px;
+  font-weight: normal;
+  letter-spacing: 0.1em;
+  list-style-type: none;
+  margin: 5px 0px 150px;
+  padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+ul li a {
+  color:#ffffff;
+  text-decoration: none;
+  font-size: 1.5em;
+}
+
+/* Button */
+.btn-logout {
+  width: 85%;
+  padding: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border: solid 2px white;
+
+  display: flex;
+  justify-content: center;
+}
+
+/* Mouse hover */
+.btn-logout:hover {
   background-color: #1A7DC4;
 }
 
@@ -738,85 +813,68 @@ ESTILIZAÇÃO DA PÁGINA VIEW POST
     margin-right: 15px;
 }
 
+
+/****************************** 
+ESTILIZAÇÃO MENSAGEM CADASTRO 
+******************************/
+
+/* Main container  */
+.container-signUpMessage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: solid 10px yellow;
+  width: 50%;
+  min-width: 340px;
+  max-width: 800px;
+  padding: 20px 20px;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.box {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 85%;
+  margin: 20px 0px;
+  box-shadow: 0px 10px 50px 0 rgba(0, 0, 0, 0.3);
+}
+
+/* Title */
+.titulo-signUpMessage {
+  color: #2D9CFA;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  margin: 2em 0 1.5em;
+}
+
+/* Feedback message */
+.feedback-text {
+  width: 100%;
+  font-size: 18px;
+  text-align: center;
+}
+
+/* Button */
+.btn-ok {
+  padding: 10px;
+  margin: 30px 0 30px 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: #2D9CFA;
+  border: none;
+  font-weight:800;
+}
+
+/* ====================== */
+
 /* .interacao i {
     margin-right: 5px;
 } */
 
-
-/****************************** 
-ESTILIZAÇÃO DA PÁGINA MENU 
-******************************/
-
-/* Main container */
-.container-menu {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #2196F3;
-  border: solid 10px yellow;
-  width: 50%; /* % da div #root */
-  min-width: 340px;
-  max-width: 800px;
-  padding: 20px 20px 50px;
-  height: 100%;
-}
-
-/* Subtitle */
-.subtitulo-menu {
-  color: #ffffff;
-  font-size: 40px;
-  font-weight: bold;
-  text-align: center;
-  padding: 1em 0 0.2em;
-}
-
-h3 {
-  color:#ffffff;
-  font-size: 14px;
-  font-weight: normal;
-  margin-bottom: 6em;
-}
-
-/* List */
-ul {
-  width: 85%;
-  font-size: 12px;
-  font-weight: normal;
-  letter-spacing: 0.1em;
-  list-style-type: none;
-  margin: 5px 0px 150px;
-  padding: 0 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 30px;
-}
-
-ul li a {
-  color:#ffffff;
-  text-decoration: none;
-  font-size: 1.5em;
-}
-
-/* Button */
-.btn-logout {
-  width: 85%;
-  padding: 20px;
-  font-size: 16px;
-  font-weight: bold;
-  color: white;
-  border: none;
-  cursor: pointer;
-  border: solid 2px white;
-
-  display: flex;
-  justify-content: center;
-}
-
-/* Mouse hover */
-.btn-logout:hover {
-  background-color: #1A7DC4;
-}
 
 /* ************************************* */
 /* @media (prefers-color-scheme: light) {
