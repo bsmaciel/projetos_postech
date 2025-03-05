@@ -1,6 +1,5 @@
 /* Estilização do topo da página */
 .top-bar {
-    background: #ffffff;
     display: grid;
     grid-template-columns:auto 1fr; 
     align-items: center;

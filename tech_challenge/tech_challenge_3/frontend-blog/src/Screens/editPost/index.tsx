@@ -10,8 +10,8 @@ import Footer from "../../components/Footer"
 const EditPost: React.FC = () => {
     return(
         <>
-        <Header pageTitle='EDITAR POST' />
         <div className="container-editPost">
+        <Header pageTitle='EDITAR POST' />
             <div className="table-container">
                 <table>
                     <thead>
@@ -50,9 +50,9 @@ const EditPost: React.FC = () => {
                     </tbody>
                 </table>
             </div>
-            <form className="form-editar">
-                <input type="text" placeholder="Nome do autor" required />
-                <input type="text" placeholder="Título do post" required />
+            <form className="form-editPost">
+                <input className="form-editar" type="text" placeholder="Nome do autor" required />
+                <input className="form-editar" type="text" placeholder="Título do post" required />
                 <textarea placeholder="Texto do post" required></textarea>
                 
                 <div className="buttons">
@@ -60,10 +60,9 @@ const EditPost: React.FC = () => {
                     <button type="submit" className="btn editar">EDITAR</button>
                 </div>
             </form>
-        </div>
         <Footer />
+        </div>
         </>
-
     )
 }
 

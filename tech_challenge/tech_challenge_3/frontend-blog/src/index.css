@@ -1,8 +1,9 @@
 /* Reset padrão */
 * {
+  background-color: transparent;
   margin: 0;
   padding: 0;
-  color: #2D9CFA;
+  /* color: #2D9CFA; */
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.5;
   /* font-weight: 900; */
@@ -18,84 +19,60 @@
 }
 
 :root {
-  background-color: #ffffff;
-  /* background-color: #303030; */
-  /* border: solid 10px red; */
-  min-width: 320px; /* Ok */
-  /* width: 100%; */
-  height: 100%; /* Ok */
+  /* background-color: #ffffff; */
+  background-color: #303030;
+  border: solid 10px red;
+  min-width: 320px;
+  /* max-height: fit-content; */
 }
 
 body {
-  /* border: solid 10px blue; */
+  border: solid 10px blue;
   min-width: 320px; /* Ok */
-  height: 100%; /* Ok */
+  height: 100%;
 }
 
 #root {
-  /* border: solid 10px green; */
+  border: solid 10px green;
   min-width: 320px; /* Ok */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items:center;
-  width: 100%; /* % de body */
   height: 100%;
 }
 
-/* Estilização do placeholder azul */
-input::placeholder {
+/* Placeholder azul */
+/* input::placeholder {
   color: #2D9CFA;
   opacity: 1;
-}
-
-.container-adminPost {
-  border: solid 10px yellow;
-  width: 50%;
-}
-
-.container-createPost {
-  border: solid 10px yellow;
-  width: 50%;
-}
-
-/* .container-editPost {
-  border: solid 10px yellow;
-  width: 50%;
 } */
-
-.container-listPost {
-  border: solid 10px yellow;
-  width: 50%;
-}
-
-.container-viewPost {
-  border: solid 10px yellow;
-}
 
 /****************************
 ESTILIZAÇÃO PÁGINA ADMIN POST
 ****************************/
 
-/* Container principal */
+/* Main container */
 .container-adminPost {
   display: flex;
   flex-direction: column;
-  /* background-color: #fffffb; */
-  /* border: solid 10px yellow; */
-  width: 50%; /* % da div #root */
+  align-items:center;
+  border: solid 10px yellow;
+  width: 50%;
   min-width: 340px;
   max-width: 800px;
   height: 100%;
-  padding: 20px 20px 50px;
-}
-/* Tabela */
-.table-container {
-    width: 90%;
-    margin: 20px auto;
-    overflow-x: auto;
 }
 
+/* Table */
+.table-adminPost {
+  overflow:auto;
+  border: 2px solid #2D9CFA;
+  min-height: 200px;
+  width: 85%;
+  margin-top: 30px;
+  }
+  
 table {
     width: 100%;
     border-collapse: collapse;
@@ -123,26 +100,38 @@ th {
     text-decoration: none;
 }
 
-/* Campos de Entrada */
-.form-container {
-    width: 90%;
-    margin: 20px auto;
-}
-
-.input-box, .text-area {
+/* Form */
+.form-adminPost {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    height: 100%;
+    margin-top: 20px;
     width: 100%;
-    padding: 10px;
+}
+
+/* Input */
+.form-adminPost input {
+    width: 85%;
+    padding: 12px;
     margin: 10px 0;
-    border: 1px solid #2196F3;
-    font-size: 16px;
+    border: 2px solid #2D9CFA;
+    font-size: 14px;
+    padding: 12px 20px;
 }
 
-.text-area {
-    height: 150px;
-    resize: none;
+/* Textarea */
+.form-adminPost textarea {
+  width: 85%;
+  padding: 12px;
+  border: 2px solid #2D9CFA;
+  font-size: 14px;
+  resize: vertical;
+  height: 200px;
 }
 
-/* Botões */
+/* Button */
 .buttons {
     display: flex;
     justify-content: space-between;
@@ -157,7 +146,6 @@ th {
 }
 
 .cancel-btn {
-    background-color: white;
     color: #2196F3;
 }
 
@@ -170,51 +158,55 @@ th {
 ESTILIZAÇÃO PÁGINA CREATE POST
 *****************************/
 
-/* Container principal */
+/* Main container */
 .container-createPost {
   display: flex;
   flex-direction: column;
-  /* background-color: #fffffb; */
-  /* border: solid 10px yellow; */
-  width: 50%; /* % da div #root */
+  border: solid 10px yellow;
+  width: 50%;
   min-width: 340px;
   max-width: 800px;
   height: 100%;
-  padding: 20px 20px 50px;
 }
 
-/* Estilização do formulário */
-.form-post {
+/* Form */
+.form-createPost {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    align-items: center;
+    gap: 40px;
+    height: 100%;
+    margin-top: 100px;
 }
 
-/* Estilização do input */
-input, textarea {
-    width: 100%;
+/* Input */
+.form-createPost input {
+    width: 85%;
     padding: 12px;
     border: 2px solid #2D9CFA;
     font-size: 14px;
-    outline: none;
+    padding: 12px 20px;
 }
 
-input::placeholder,
-textarea::placeholder {
+/* Textarea */
+.form-createPost textarea {
+  width: 85%;
+  padding: 12px;
+  border: 2px solid #2D9CFA;
+  font-size: 14px;
+  min-height: 200px;
+  resize:vertical;
+}
+
+input::placeholder, textarea::placeholder {
     color: #2D9CFA;
 }
 
-/* Estilização do textarea */
-textarea {
-    height: 150px;
-    resize: none;
-}
-
-/* Estilização dos botões */
+/* Button */
 .buttons {
     display: flex;
-    justify-content: space-between;
-    margin-top: 10px;
+    justify-content: space-around;
+    width: 85%;
 }
 
 .btn {
@@ -241,23 +233,25 @@ textarea {
 ESTILOS PÁGINA EDIT POST
 ***********************/
 
-/* Container principal */
+/* Main container */
 .container-editPost {
   display: flex;
   flex-direction: column;
-  /* background-color: #fffffb; */
+  align-items: center;
   border: solid 10px yellow;
-  width: 50%; /* % da div #root */
+  width: 50%;
   min-width: 340px;
   max-width: 800px;
   height: 100%;
-  padding: 20px 20px 50px;
 }
 
-/* Estilização da tabela */
+/* Table */
 .table-container {
-    overflow-x: auto;
+    overflow:auto;
     border: 2px solid #2D9CFA;
+    min-height: 200px;
+    width: 85%;
+    margin-top: 30px;
 }
 
 table {
@@ -286,20 +280,35 @@ td a:hover {
     text-decoration: underline;
 }
 
-/* Estilização do formulário */
-.form-editar {
+/* Form */
+.form-editPost {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    align-items: center;
+    gap: 20px;
+    height: 100%;
     margin-top: 20px;
+    width: 100%;
 }
 
-input, textarea {
-    width: 100%;
+/* Input */
+.form-editPost input {
+  width: 85%;
+  padding: 12px;
+  border: 2px solid #2D9CFA;
+  font-size: 14px;
+  outline: none;
+}
+
+/* Textarea */
+.form-editPost textarea {
+    width: 85%;
     padding: 12px;
     border: 2px solid #2D9CFA;
     font-size: 14px;
     outline: none;
+    resize: vertical;
+    min-height: 200px;
 }
 
 input::placeholder,
@@ -307,16 +316,13 @@ textarea::placeholder {
     color: #2D9CFA;
 }
 
-textarea {
-    height: 150px;
-    resize: none;
-}
-
-/* Estilizção dos botões */
+/* Button */
 .buttons {
     display: flex;
     justify-content: space-between;
     margin-top: 10px;
+    margin: 30px 10px;
+    width: 85%;
 }
 
 .btn {
@@ -343,55 +349,63 @@ textarea {
 ESTILOS PÁGINA LIST POST
 ***********************/
 
-/* Container principal */
+/* Main container */
 .container-listPost {
   display: flex;
   flex-direction: column;
-  /* background-color: #fffffb; */
+  justify-content: space-between;
   border: solid 10px yellow;
   width: 50%; /* % da div #root */
   min-width: 340px;
   max-width: 800px;
   height: 100%;
-  padding: 20px 20px 50px;
 }
 
-/* Estilizar post */
+/* List */
+.list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  margin: 40px 0;
+}
+
 .post {
     background: #E3F2FD;
-    padding: 15px;
-    border-radius: 10px;
-    margin-bottom: 15px;
+    width: 85%;
+    padding: 40px;
 }
 
 .autor {
-    color: #2D9CFA;
-    font-size: 12px;
-    font-weight: bold;
+  color: #2D9CFA;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 20px;
 }
 
 .titulo {
-    color: #2D9CFA;
-    font-size: 18px;
-    font-weight: bold;
-    margin: 5px 0;
+  color: #2D9CFA;
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 20px;
 }
 
-.descricao {
-    font-size: 14px;
-    color: #333;
-    margin-bottom: 10px;
+.corpoTexto {
+  font-size: 16px;
+  color: #2D9CFA;
+  margin-bottom: 20px;
+  text-align: justify;
 }
 
-/* Estilizar interação */
-.interacao {
+/* Interaction */
+.interacao-listPost {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 14px;
+    font-size: 16px;
 }
 
-.interacao span {
+.interacao-listPost span {
     color: #2D9CFA;
     display: flex;
     align-items: center;
@@ -401,57 +415,56 @@ ESTILOS PÁGINA LIST POST
     margin-right: 5px;
 }
 
-/* Estilizar botão "+" */
+/* "+" */
 .mais {
     color: #2D9CFA;
     font-size: 20px;
     text-decoration: none;
 }
 
-/* Estilizar paginação */
+/* Pagination */
 .paginacao {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
 }
 
 .paginacao a, .paginacao span {
-    margin: 0 5px;
-    font-size: 14px;
-    color: #2D9CFA;
-    text-decoration: none;
-    padding: 5px 10px;
-    border-radius: 5px;
+  margin: 0 8px;
+  font-size: 16px;
+  color: #2D9CFA;
+  text-decoration: none;
+  padding: 5px 20px 5px 5px;
 }
 
 .paginacao .ativo {
-    background: #2D9CFA;
-    color: white;
+  border-right: solid 2px white;
+  font-weight: bold;
+  color: #2D9CFA;
 }
 
 .paginacao .desabilitado {
-    opacity: 0.5;
+    border-right: solid 2px white;
+    color: #90cbff;
 }
 
 /*******************
 ESTILOS PÁGINA LOGIN
 *******************/
 
-/* Container principal */
+/* Main container */
 .container-login {
   display: flex;
   flex-direction: column;
-  background-color: #fffffb;
-  /* border: solid 10px yellow; */
+  border: solid 10px yellow;
   width: 50%; /* % da div #root */
   min-width: 340px;
   max-width: 800px;
-  height: 100%;
   padding: 20px 20px 50px;
+  height: 100%;
 }
 
-/* Estilização do subtítulo */
+/* Subtitle */
 .subtitulo-login {
   /* color: #2D9CFA; */
   font-size: 24px;
@@ -460,7 +473,7 @@ ESTILOS PÁGINA LOGIN
   padding: 2em 0 2em;
 }
 
-/* Estilização do form */
+/* Form */
 .form-login {
   display: flex;
   flex-direction: column;
@@ -469,7 +482,7 @@ ESTILOS PÁGINA LOGIN
   height: 100%;
 }
 
-/* Estilização dos inputs */
+/* Inputs */
 .form-login input {
   width: 85%;
   height: 4em;
@@ -481,7 +494,7 @@ ESTILOS PÁGINA LOGIN
   background: transparent;
 }
 
-/* Estilização dos links */
+/* Links */
 .links-login {
   width: 85%;
   font-size: 12px;
@@ -495,7 +508,7 @@ ESTILOS PÁGINA LOGIN
   text-decoration: none;
 }
 
-/* Estilização do botão login */
+/* Button */
 .btn-login {
   width: 85%;
   padding: 20px;
@@ -504,14 +517,13 @@ ESTILOS PÁGINA LOGIN
   color: white;
   background-color: #2D9CFA;
   border: none;
-  border-radius: 5px;
   cursor: pointer;
 
   display: flex;
   justify-content: center;
 }
 
-/* Efeito de hover no botão */
+/* Mouse hover */
 .btn-login:hover {
   background-color: #1A7DC4;
 }
@@ -520,20 +532,20 @@ ESTILOS PÁGINA LOGIN
 ESTILOS PÁGINA PASSWORD RESET
 ****************************/
 
-/* Container principal */
+/* Main container */
+
 .container-passwordReset {
   display: flex;
   flex-direction: column;
-  background-color: #fffffb;
-  /* border: solid 10px yellow; */
-  width: 50%; /* % da div #root */
+  border: solid 10px yellow;
+  width: 50%;
   min-width: 340px;
   max-width: 800px;
-  height: 100%;
   padding: 20px 20px 50px;
+  height: 100%;
 }
 
-/* Estilização do subtítulo */
+/* Subtitle */
 .subtitulo-passwordReset {
   /* color: #2D9CFA; */
   font-size: 24px;
@@ -542,7 +554,7 @@ ESTILOS PÁGINA PASSWORD RESET
   padding: 2em 0 2em;
 }
 
-/* Estilização do form */
+/* Form */
 .form-passwordReset {
   display: flex;
   flex-direction: column;
@@ -551,7 +563,7 @@ ESTILOS PÁGINA PASSWORD RESET
   height: 100%;
 }
 
-/* Estilização dos inputs */
+/* Inputs */
 .form-passwordReset input {
   width: 85%;
   height: 4em;
@@ -563,7 +575,7 @@ ESTILOS PÁGINA PASSWORD RESET
   background: transparent;
 }
 
-/* Estilização dos termos */
+/* Feedback message */
 .info-text {
   width: 75%;
   font-size: 12px;
@@ -572,7 +584,7 @@ ESTILOS PÁGINA PASSWORD RESET
   text-align: center;
 }
 
-/* Estilização do botão enviar */
+/* Button */
 .btn-enviar {
   width: 85%;
   padding: 20px;
@@ -588,7 +600,7 @@ ESTILOS PÁGINA PASSWORD RESET
   justify-content: center;
 }
 
-/* Efeito de hover no botão */
+/* Mouse hover */
 .btn-enviar:hover {
   background-color: #1A7DC4;
 }
@@ -597,20 +609,19 @@ ESTILOS PÁGINA PASSWORD RESET
 ESTILIZAÇÃO DA PÁGINA SIGNUP 
 ***************************/
   
-/* Container principal */
+/* Main container  */
 .container-signUp {
   display: flex;
   flex-direction: column;
-  background-color: #fffffb;
-  /* border: solid 10px yellow; */
+  border: solid 10px yellow;
   width: 50%; /* % da div #root */
   min-width: 340px;
   max-width: 800px;
-  height: 100%;
   padding: 20px 20px 50px;
+  height: 100vmax;
 }
 
-/* Estilização do subtítulo */
+/* Subtitle */
 .subtitulo-signUp {
   /* color: #2D9CFA; */
   font-size: 24px;
@@ -619,7 +630,7 @@ ESTILIZAÇÃO DA PÁGINA SIGNUP
   padding: 2em 0 2em;
 }
 
-/* Estilização do form */
+/* Form */
 .form-signUp {
   display: flex;
   flex-direction: column;
@@ -628,7 +639,7 @@ ESTILIZAÇÃO DA PÁGINA SIGNUP
   height: 100%;
 }
 
-/* Estilização dos inputs */
+/* Inputs */
 .form-signUp input {
   width: 85%;
   height: 4em;
@@ -640,7 +651,7 @@ ESTILIZAÇÃO DA PÁGINA SIGNUP
   background: transparent;
 }
 
-/* Estilização dos termos */
+/* Terms of use */
 .terms {
   width: 75%;
   font-size: 12px;
@@ -655,7 +666,7 @@ ESTILIZAÇÃO DA PÁGINA SIGNUP
   font-weight: bold;
 }
 
-/* Estilização do botão signUp */
+/* Botão signUp */
 .btn-signUp {
   width: 85%;
   padding: 20px;
@@ -684,61 +695,61 @@ ESTILIZAÇÃO DA PÁGINA VIEW POST
 .container-viewPost {
   display: flex;
   flex-direction: column;
-  /* background-color: #fffffb; */
+  /* justify-content: space-between; */
   border: solid 10px yellow;
-  width: 50%; /* % da div #root */
+  width: 50%;
   min-width: 340px;
   max-width: 800px;
   height: 100%;
-  padding: 20px 20px 50px;
 }
 
-/* Estilização do post */
+/* Post */
 .post-completo {
     background: #E3F2FD;
-    padding: 15px;
-    border-radius: 10px;
+    padding: 40px 40px;
+    margin:20px;
 }
 
 .autor {
     color: #2D9CFA;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: bold;
+    margin-bottom: 20px;
 }
 
 .titulo {
     color: #2D9CFA;
-    font-size: 18px;
+    font-size: 26px;
     font-weight: bold;
-    margin: 5px 0;
+    margin-bottom: 20px;
 }
 
-.conteudo {
-    font-size: 14px;
+.corpoTexto {
+    font-size: 16px;
     color: #2D9CFA;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     text-align: justify;
 }
 
-/* Estilização da interação */
-.interacao {
+/* Interaction */
+.interacao-viewPost {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
     font-size: 14px;
     margin-top: 15px;
 }
 
-.interacao span {
+.interacao-viewPost span {
     color: #2D9CFA;
     display: flex;
     align-items: center;
     margin-right: 15px;
 }
 
-.interacao i {
+/* .interacao i {
     margin-right: 5px;
-}
+} */
 
 
 /* ************************************* */
