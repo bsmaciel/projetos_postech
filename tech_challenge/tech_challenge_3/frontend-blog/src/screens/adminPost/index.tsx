@@ -13,7 +13,7 @@ const AdminPost: React.FC = () => {
         <>
             <div className="container-adminPost">
                 <Header pageTitle='ADMIN POST'/>
-                <section className="table-adminPost">
+                <div className="table-container">
                     <table>
                         <thead>
                             <tr>
@@ -35,6 +35,24 @@ const AdminPost: React.FC = () => {
                             </tr>
                             <tr>
                                 <td>00</td>
+                                <td>Nome Sobrenome</td>
+                                <td>Título aqui</td>
+                                <td>
+                                    <a href="#" className="edit">Editar</a>
+                                    <a href="#" className="delete">Apagar</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>00</td>
+                                <td>Nome Sobrenome</td>
+                                <td>Título aqui</td>
+                                <td>
+                                    <a href="#" className="edit">Editar</a>
+                                    <a href="#" className="delete">Apagar</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>00</td>
                                 <td>Marcos Oliveira</td>
                                 <td>JavaScript</td>
                                 <td>
@@ -42,19 +60,64 @@ const AdminPost: React.FC = () => {
                                     <a href="#" className="delete">Apagar</a>
                                 </td>
                             </tr>
+                            <tr>
+                                <td>00</td>
+                                <td>Nome Sobrenome</td>
+                                <td>Título aqui</td>
+                                <td>
+                                    <a href="#" className="edit">Editar</a>
+                                    <a href="#" className="delete">Apagar</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>00</td>
+                                <td>Nome Sobrenome</td>
+                                <td>Título aqui</td>
+                                <td>
+                                    <a href="#" className="edit">Editar</a>
+                                    <a href="#" className="delete">Apagar</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>00</td>
+                                <td>Nome Sobrenome</td>
+                                <td>Título aqui</td>
+                                <td>
+                                    <a href="#" className="edit">Editar</a>
+                                    <a href="#" className="delete">Apagar</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>00</td>
+                                <td>Nome Sobrenome</td>
+                                <td>Título aqui</td>
+                                <td>
+                                    <a href="#" className="edit">Editar</a>
+                                    <a href="#" className="delete">Apagar</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>00</td>
+                                <td>Nome Sobrenome</td>
+                                <td>Título aqui</td>
+                                <td>
+                                    <a href="#" className="edit">Editar</a>
+                                    <a href="#" className="delete">Apagar</a>
+                                </td>
+                            </tr>
                         </tbody>
                     </table>
-                </section>
-                <section className="form-adminPost">
-                    <input type="text" value="Marcos Oliveira" />
-                    <input type="text" value="JavaScript" className="input-box" />
-                    <textarea className="text-area">Quisque eu nisi mi. Curabitur iaculis dolor lacus, et viverra mi iaculis sagittis...</textarea>
+                </div>
+                <form className="form-adminPost">
+                    <input type="text" placeholder="Digite seu nome" required value="" />
+                    <input type="text" placeholder="Digite o título do post" required value="" className="input-box" />
+                    <textarea placeholder="Insira o texto" required></textarea>
 
                     <div className="buttons">
                         <button className="cancel-btn">Cancelar</button>
                         <button className="save-btn">Salvar</button>
                     </div>
-                </section>
+                </form>
                 <Footer />
             </div>
         </>

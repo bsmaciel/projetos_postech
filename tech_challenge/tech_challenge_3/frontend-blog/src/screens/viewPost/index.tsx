@@ -15,7 +15,7 @@ const ViewPost: React.FC = () => {
                 <div className="post-completo">
                     <p className="autor">AUTOR</p>
                     <h2 className="titulo">Título do Post</h2>
-                    <p className="conteudo">
+                    <p className="corpoTexto">
                     Vestibulum ultricies condimentum nunc, in euismod est suscipit ac. Curabitur ac volutpat augue. 
                     Aenean vel maximus nisl. Suspendisse potenti. Nulla interdum neque et nulla vehicula blandit. 
                     Donec mollis quam nulla, in placerat nisl faucibus tincidunt. Proin mollis vehicula nibh eu mattis. 
@@ -38,7 +38,7 @@ const ViewPost: React.FC = () => {
                     Proin vel erat vel urna gravida convallis vitae vel enim. Nulla varius ultricies nunc, sed vulputate enim. 
                     Nulla viverra felis eros. Aliquam erat volutpat.
                     </p>
-                    <p className="CorpoTexto">
+                    <p className="corpoTexto">
                     Ut metus ante, auctor eget diam at, posuere hendrerit magna. Suspendisse fermentum maximus nibh, vitae feugiat massa tristique in. 
                     In hac habitasse platea dictumst. Nullam ultrices dictum erat. Fusce arcu neque, finibus quis dictum vitae, rutrum sit amet felis. 
                     Mauris viverra vel lacus vitae pellentesque. Pellentesque sagittis diam in dictum interdum. Vivamus a metus eget leo ornare maximus 

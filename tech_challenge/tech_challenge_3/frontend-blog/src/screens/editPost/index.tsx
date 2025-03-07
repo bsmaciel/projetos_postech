@@ -12,54 +12,78 @@ const EditPost: React.FC = () => {
         <>
         <div className="container-editPost">
         <Header pageTitle='EDITAR POST' />
-            <div className="table-container">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>ID</th>
-                            <th>Autor</th>
-                            <th>Título Post</th>
-                            <th>Selecionar</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>00</td>
-                            <td>Nome Sobrenome</td>
-                            <td>Título aqui</td>
-                            <td><a href="#">Editar</a></td>
-                        </tr>
-                        <tr>
-                            <td>15</td>
-                            <td>Joaquim da Silva</td>
-                            <td>Front-end com React</td>
-                            <td><a href="#">Editar</a></td>
-                        </tr>
-                        <tr>
-                            <td>00</td>
-                            <td>Nome Sobrenome</td>
-                            <td>Título aqui</td>
-                            <td><a href="#">Editar</a></td>
-                        </tr>
-                        <tr>
-                            <td>00</td>
-                            <td>Nome Sobrenome</td>
-                            <td>Título aqui</td>
-                            <td><a href="#">Editar</a></td>
-                        </tr>
-                    </tbody>
-                </table>
+        <div className="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Autor</th>
+                        <th>Título Post</th>
+                        <th>Selecionar</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>00</td>
+                        <td>Nome Sobrenome</td>
+                        <td>Título aqui</td>
+                        <td><a href="#">Editar</a></td>
+                    </tr>
+                    <tr>
+                        <td>15</td>
+                        <td>Joaquim da Silva</td>
+                        <td>Front-end com React</td>
+                        <td><a href="#">Editar</a></td>
+                    </tr>
+                    <tr>
+                        <td>00</td>
+                        <td>Nome Sobrenome</td>
+                        <td>Título aqui</td>
+                        <td><a href="#">Editar</a></td>
+                    </tr>
+                    <tr>
+                        <td>00</td>
+                        <td>Nome Sobrenome</td>
+                        <td>Título aqui</td>
+                        <td><a href="#">Editar</a></td>
+                    </tr>
+                    <tr>
+                        <td>00</td>
+                        <td>Nome Sobrenome</td>
+                        <td>Título aqui</td>
+                        <td><a href="#">Editar</a></td>
+                    </tr>
+                    <tr>
+                        <td>00</td>
+                        <td>Nome Sobrenome</td>
+                        <td>Título aqui</td>
+                        <td><a href="#">Editar</a></td>
+                    </tr>
+                    <tr>
+                        <td>00</td>
+                        <td>Nome Sobrenome</td>
+                        <td>Título aqui</td>
+                        <td><a href="#">Editar</a></td>
+                    </tr>
+                    <tr>
+                        <td>00</td>
+                        <td>Nome Sobrenome</td>
+                        <td>Título aqui</td>
+                        <td><a href="#">Editar</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <form className="form-editPost">
+            <input className="form-editar" type="text" placeholder="Nome do autor" required />
+            <input className="form-editar" type="text" placeholder="Título do post" required />
+            <textarea placeholder="Texto do post" required></textarea>
+            
+            <div className="buttons">
+                <button type="reset" className="btn limpar">LIMPAR</button>
+                <button type="submit" className="btn editar">EDITAR</button>
             </div>
-            <form className="form-editPost">
-                <input className="form-editar" type="text" placeholder="Nome do autor" required />
-                <input className="form-editar" type="text" placeholder="Título do post" required />
-                <textarea placeholder="Texto do post" required></textarea>
-                
-                <div className="buttons">
-                    <button type="reset" className="btn limpar">LIMPAR</button>
-                    <button type="submit" className="btn editar">EDITAR</button>
-                </div>
-            </form>
+        </form>
         <Footer />
         </div>
         </>
