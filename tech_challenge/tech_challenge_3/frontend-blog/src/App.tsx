@@ -13,14 +13,14 @@ import PasswordReset from './screens/passwordReset'
 import SignUp from './screens/signUp'
 import ViewPost from './screens/viewPost'
 
-import './App.css'
-
 import SignUpMessage from './components/SignUpMessage'
 import PasswordResetMessage from './components/PasswordResetMessage'
 import AdminPostsAlert from './components/AdminPostsAlert'
 
-// import '@fortawesome/fontawesome-free/css/all.min.css'
-// import '@fortawesome/fontawesome-free/js/all.min.js'
+import './App.css'
+
+import '@fortawesome/fontawesome-free/css/all.min.css'
+import '@fortawesome/fontawesome-free/js/all.min.js'
 
 function App() {
 
@@ -53,13 +53,3 @@ function App() {
 
 export default App
 
-/*   return (
-    <>
-      <Header />
-      <MainContent>
-        <Login />
-      </MainContent>
-      <Footer />
-    </>
-  )
-}   */
