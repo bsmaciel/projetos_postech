@@ -1,14 +1,25 @@
 /* Estilização do rodapé */
 footer {
     background: #2196F3;
-    display: flex;
-    justify-content: space-around;
-    padding: 15px;
+    display: grid;
+    grid-template-columns:auto 1fr; 
+    align-items: center;
+    padding: 15px 54px 15px 40px;
     width: 100%;
 }
 
+/* Estilização FIAP */
 footer span {
     color: white;
+    font-size: 14px;
+    font-weight: bold;
+    justify-self: center;
+  }
+
+/* Estilização retorno página anterior */
+footer .fa-arrow-left {
+    color: white;
+    cursor: pointer;
 }
 
 /* footer i {
@@ -16,7 +27,8 @@ footer span {
     color: #ffffff;
 } */
 
-.fas fa-arrow-left back-icon {
+/* .fas fa-arrow-left back-icon {
     color: white;
     cursor: pointer;
 }
+*/
