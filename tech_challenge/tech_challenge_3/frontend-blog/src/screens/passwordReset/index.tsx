@@ -10,7 +10,7 @@ const PasswordReset: React.FC = () => {
     return(
         <div className="container-passwordReset">
             <TopBar pageTitle='SUPORTE' />
-            <h2 className="subtitulo-passwordReset">Recuperar senha</h2>
+            <h2 className="subtitulo">Recuperar senha</h2>
 
             <form className="form-passwordReset" action="#" method="POST">
                 <input type="email" placeholder="Email" required />

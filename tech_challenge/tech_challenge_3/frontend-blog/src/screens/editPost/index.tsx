@@ -10,8 +10,8 @@ import Footer from "../../components/Footer"
 const EditPost: React.FC = () => {
     return(
         <>
-        <div className="container-editPost">
         <Header pageTitle='EDITAR POST' />
+        <div className="container-editPost">
         <div className="table-container">
             <table>
                 <thead>
@@ -84,8 +84,8 @@ const EditPost: React.FC = () => {
                 <button type="submit" className="btn editar">EDITAR</button>
             </div>
         </form>
-        <Footer />
         </div>
+        <Footer />
         </>
     )
 }
