@@ -1,20 +1,22 @@
 /* Estilização do topo da página */
 .top-bar {
-    display: grid;
-    grid-template-columns:auto 1fr; 
-    align-items: center;
-    padding: 15px 54px 15px 40px;
-    width: 100%;
-  }
+  display: grid;
+  grid-template-columns:auto 1fr; 
+  align-items: center;
+  padding: 15px 54px 15px 40px;
+  width: 100%;
+}
 
 /* Estilização retorno página anterior */
-.fa-arrow-left {
+.top-bar .fa-arrow-left {
   cursor: pointer;
+  color: #2D9CFA;
 }
 
 /* Estilização do título da página */
 .pageTitle {
-  font-size: 14px;
+  color: #2D9CFA;
+  font-size: 18px;
   font-weight: bold;
   justify-self: center;
 }

@@ -17,82 +17,15 @@
 }
 
 :root {
-  /* background-color: #ffffff; */
   border: solid 10px red;
-  min-width: 320px;
-  /* max-height: fit-content; */
+  width: 100%;
+  background-color: black;
 }
 
 body {
   border: solid 10px blue;
-  min-width: 320px; /* Ok */
+  width: 100%;
   height: 100%;
 }
 
-/* @media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-
-  a:hover {
-    color: #747bff;
-  }
-
-  button {
-    background-color: #f9f9f9;
-  }
-} */
-
-/****************************
-ESTILIZAÇÃO PÁGINA ADMIN POST
-****************************/
-
-/*****************************
-ESTILIZAÇÃO PÁGINA CREATE POST
-*****************************/
-
-/***********************
-ESTILOS PÁGINA EDIT POST
-***********************/
-
-/***********************
-ESTILOS PÁGINA LIST POST
-***********************/
-
-/*******************
-ESTILOS PÁGINA LOGIN
-*******************/
-
-/****************************** 
-ESTILIZAÇÃO DA PÁGINA MENU 
-******************************/
-
-/****************************
-ESTILOS PÁGINA PASSWORD RESET
-****************************/
-
-/*************************** 
-ESTILIZAÇÃO DA PÁGINA SIGNUP 
-***************************/
-
-/****************************** 
-ESTILIZAÇÃO DA PÁGINA VIEW POST 
-******************************/
-
-/****************************** 
-ESTILIZAÇÃO ALERTA EXCLUSÃO 
-******************************/
-
-/***************************************** 
-ESTILIZAÇÃO MENSAGEM RECUPERAÇÃO DE SENHA 
-*****************************************/
-
-/****************************** 
-ESTILIZAÇÃO MENSAGEM CADASTRO 
-******************************/
-
-/* .interacao i {
-    margin-right: 5px;
-} */
 

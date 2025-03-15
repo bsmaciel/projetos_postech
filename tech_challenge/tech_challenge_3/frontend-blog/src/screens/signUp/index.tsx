@@ -9,7 +9,7 @@ const SignUp: React.FC = () => {
     return(
         <div className="container-signUp">
             <TopBar pageTitle='CADASTRO' />
-            <h2 className="subtitulo-signUp">Crie sua conta</h2>
+            <h2 className="subtitle">Crie sua conta</h2>
 
             <form className="form-signUp" action="#" method="POST">
                 <input type="text" placeholder="Nome completo" required />
