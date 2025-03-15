@@ -9,7 +9,7 @@ const Login: React.FC = () => {
     return(
         <div className="container-login">
             <TopBar pageTitle='LOGIN'/>
-            <h2 className="subtitulo-login">Acesse sua conta</h2>
+            <h2 className="subtitle">Acesse sua conta</h2>
 
             <form className="form-login">
                 <input type="text" placeholder="Nome completo" required />

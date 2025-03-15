@@ -1,6 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-// import Footer from './components/Footer'
-// import Header from './components/Header'
+
 import MainContent from './components/MainContent'
 import AdminPost from './screens/adminPost'
 import CreatePost from './screens/createPost'
@@ -21,6 +20,8 @@ import './App.css'
 
 import '@fortawesome/fontawesome-free/css/all.min.css'
 import '@fortawesome/fontawesome-free/js/all.min.js'
+
+// import api from './api' Preciso importar a api aqui?
 
 function App() {
 
