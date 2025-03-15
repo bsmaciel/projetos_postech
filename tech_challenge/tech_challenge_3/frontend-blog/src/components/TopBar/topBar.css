@@ -15,7 +15,8 @@
 
 /* Estilização do título da página */
 .pageTitle {
-  font-size: 14px;
+  color: #2D9CFA;
+  font-size: 18px;
   font-weight: bold;
   justify-self: center;
 }
