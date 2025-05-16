@@ -1,10 +1,9 @@
 {
-  "name": "aula1-node_estrutura_projeto",
+  "name": "estrutura_projeto",
   "version": "1.0.0",
-  "description": "",
-  "main": "app.js",
+  "description": "aula 1",
+  "main": "index.js",
   "scripts": {
-    "start": "node ./express/fiap-app/bin/www",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Bruno Maciel",
