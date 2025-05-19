@@ -1,4 +1,4 @@
-A organização das pastas pode seguir critérios de "atribuição de função", ou seguir critérios relacionados ao "contexto do projeto". Dessa forma, podemos organizar as pastas seguindo uma lógica da função atribuída ao conteúdo que será armazenado na pasta, ou seguir outra lógica, que organiza as pastas de acordo com o contexto do negócio. Por exemplo:
+A organização das pastas pode seguir critérios de "atribuição de função", ou critérios relacionados ao "contexto do projeto". Dessa forma, podemos organizar as pastas a partir de uma lógica baseada na função atribuída ao conteúdo (controladores, modelos etc.), ou seguir outra lógica, organizando as pastas de acordo com o contexto do negócio (professores, alunos, notas etc.). Veja!
 
 ATRIBUIÇÃO
 - controllers
