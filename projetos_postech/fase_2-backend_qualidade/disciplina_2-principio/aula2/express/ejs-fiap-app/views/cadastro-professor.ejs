@@ -1,0 +1,16 @@
+<%- include('partials/header') %>
+
+
+<div class="container mt-5">
+    <h1><%- title %></h1>
+    <form method="post" action="/users/cadastro">
+        <div class="form-group">
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" class="form-control" placeholder="Digite a disciplina" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Cadastrar Aluno</button>
+    </form>
+</div>
+
+
+<%- include('partials/footer') %>
